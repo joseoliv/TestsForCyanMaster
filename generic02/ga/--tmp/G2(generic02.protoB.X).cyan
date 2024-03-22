@@ -1,0 +1,27 @@
+package generic02.ga
+
+
+open object G2<generic02.protoB.X> 
+
+    func init  { _value = G3<generic02.protoB.X> new    } 
+
+    func nameGP -> String  {
+        return generic02.protoB.X prototypeName
+    } 
+
+    func name -> String  = "generic02.ga." ++ prototypeName;
+
+    func value -> G3<generic02.protoB.X>  = _value;
+
+    func nameT -> String  = (    @symbolToString("generic02.protoB.X") );
+
+    func check: (String tname)   {
+        let tproto = generic02.protoB.X prototypeName; 
+        assert  tproto == tname;
+    
+    } 
+
+    private let G3<generic02.protoB.X> _value
+
+end
+

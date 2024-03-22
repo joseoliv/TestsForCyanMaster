@@ -1,0 +1,8 @@
+package generic02.ga
+
+
+object Empty<Int> 
+
+
+end
+

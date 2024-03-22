@@ -1,0 +1,7 @@
+package generic02.ga
+
+
+
+object Proto_I3__<generic02.ga.G1<Char>> implements I3<generic02.ga.G1<Char>>
+
+end

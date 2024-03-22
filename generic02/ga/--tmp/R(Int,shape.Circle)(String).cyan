@@ -1,0 +1,25 @@
+package generic02.ga
+
+
+object R<Int, shape.Circle><String> 
+
+    func init  {
+        t = One<Int> new; 
+        u = One<shape.Circle> new; 
+        v = One<String>()
+    } 
+
+    func str -> String  = Int prototypeName ++ " " ++ shape.Circle prototypeName ++ " " ++ String prototypeName;
+
+    func gett -> One<Int>  = t;
+
+    func getu -> One<shape.Circle>  = u;
+
+    func getv -> One<String>  = v;
+
+    private let One<Int> t
+    private let One<shape.Circle> u
+    private let One<String> v
+
+end
+

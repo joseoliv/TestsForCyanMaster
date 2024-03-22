@@ -1,0 +1,25 @@
+package generic02.ga
+
+
+object SubG1<Int> extends G1<Int>
+          implements I1<Int>
+
+    func init  { super init    } 
+
+    func init: (G2<Int> _value)   { super init: _value    } 
+
+    override func nameGP -> String  {
+        return Int prototypeName
+    } 
+
+    override func noop: (I2<Int> i2)  -> Array<Int>  {
+        let Array<Int> a = Array<Int> new; 
+        a add: Int new; 
+        return a
+    } 
+
+    override func succ: (Int n)  -> Int  = n succ;
+
+
+end
+

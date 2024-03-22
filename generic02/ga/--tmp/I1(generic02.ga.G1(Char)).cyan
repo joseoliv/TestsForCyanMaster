@@ -1,0 +1,8 @@
+package generic02.ga
+
+
+public interface I1<generic02.ga.G1<Char>>
+    func noop: I2<generic02.ga.G1<Char>>  -> Array<generic02.ga.G1<Char>> 
+    func succ: (Int n)  -> Int 
+end
+

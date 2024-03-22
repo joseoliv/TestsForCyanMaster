@@ -1,0 +1,14 @@
+package generic02.ga
+
+
+object WithStrParam<first, second, third> 
+
+    func first -> Char  = 'a';
+
+    func second -> String  = "z";
+
+    func getStr -> String  = "[" ++ (    @symbolToString("third") ) ++ "]";
+
+
+end
+

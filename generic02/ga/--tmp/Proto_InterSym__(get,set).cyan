@@ -1,0 +1,7 @@
+package generic02.ga
+
+
+
+object Proto_InterSym__<get, set> implements InterSym<get, set>
+
+end

@@ -1,0 +1,15 @@
+package context
+
+
+object SumInject<Byte> extends InjectObject<Byte>
+
+    func init  { sum = Byte    } 
+
+    override func eval: (Byte item)   { sum = sum + item    } 
+
+    override func result -> Byte  = sum;
+
+    private var Byte sum
+
+end
+

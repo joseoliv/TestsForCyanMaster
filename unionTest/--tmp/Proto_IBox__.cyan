@@ -1,0 +1,7 @@
+package unionTest
+
+
+
+object Proto_IBox__ implements IBox
+
+end

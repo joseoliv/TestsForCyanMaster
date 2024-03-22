@@ -1,0 +1,21 @@
+package javaInter.main
+
+
+open object GP<java.lang.Integer> 
+
+    func init: (java.lang.Integer elem)   { self.elem = elem    } 
+
+    func get -> java.lang.Integer  = elem;
+
+    func set: (java.lang.Integer elem)   { self.elem = elem    } 
+
+    func getStr -> String  {
+        var java.lang.Object any = elem; 
+        var String s = any toString; 
+        return s
+    } 
+
+    private var java.lang.Integer elem
+
+end
+

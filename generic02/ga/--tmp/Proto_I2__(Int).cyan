@@ -1,0 +1,7 @@
+package generic02.ga
+
+
+
+object Proto_I2__<Int> implements I2<Int>
+
+end

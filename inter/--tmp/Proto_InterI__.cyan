@@ -1,0 +1,7 @@
+package inter
+
+
+
+object Proto_InterI__ implements InterI
+
+end

@@ -1,0 +1,7 @@
+package generic02.ga
+
+
+
+object Proto_I3__<Int> implements I3<Int>
+
+end

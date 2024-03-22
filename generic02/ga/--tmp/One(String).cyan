@@ -1,0 +1,10 @@
+package generic02.ga
+
+
+object One<String> 
+
+    func strOne -> String  = String prototypeName ++ " " ++ String prototypeName;
+
+
+end
+

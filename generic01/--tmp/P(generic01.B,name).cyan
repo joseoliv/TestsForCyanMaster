@@ -1,0 +1,24 @@
+package generic01
+
+
+object P<generic01.B, name> 
+
+    func init  { tvalue = ""    } 
+
+    func run  {
+        let sym = "generic01.B"; 
+        var generic01.B x = generic01.B new; 
+        var Array<generic01.B> tlist = Array<generic01.B> new; 
+        tlist =  [ generic01.B(), generic01.B() ] ; 
+        generic01.B name: "TALP"; 
+        tvalue = generic01.B name
+    } 
+
+    func name: (Char ch)  -> generic01.B  { return generic01.B new    } 
+
+    func name -> generic01.B  = generic01.B();
+
+    private var String tvalue
+
+end
+

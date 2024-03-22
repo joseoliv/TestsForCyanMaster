@@ -1,0 +1,38 @@
+package javaInter.other
+
+open 
+object WorkerOther extends javaInter.main.Person
+
+    func test {
+        run: "a";
+    }
+
+    func run: String s {
+        self myprot: 0;
+        assert self myprot == 1;
+        assert SubProgram() packageFun == 0;
+        assert SubProgram() packageFun: 0 == 1;
+        assert self m println == Nil;
+        assert self p println == Nil;
+        assert self t println == Nil;
+        assert self r println == Nil;
+    }
+
+    protected 
+    override
+    func myprot: Int n { }
+    
+    protected 
+    override
+    func myprot -> Int = 1;
+
+    private
+    func m { }
+    private
+    func p = Nil;
+    private 
+    func t -> Nil { }
+    private
+    func r -> Nil = Nil;
+
+end

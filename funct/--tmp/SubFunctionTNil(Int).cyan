@@ -1,0 +1,15 @@
+package funct
+
+
+open object SubFunctionTNil<Int> extends Function<Int, Nil>
+
+    func init  { sum = Int defaultValue    } 
+
+    override func eval: (Int n)   { sum = sum + n    } 
+
+    func getSum -> Int  = sum;
+
+    private var Int sum
+
+end
+

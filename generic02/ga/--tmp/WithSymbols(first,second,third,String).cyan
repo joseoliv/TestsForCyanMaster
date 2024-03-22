@@ -1,0 +1,16 @@
+package generic02.ga
+
+
+object WithSymbols<first, second, third, String> 
+
+    func first -> Int  = 0;
+
+    func second -> Char  = 'a';
+
+    func third -> String  = "z";
+
+    func getw -> String  = String new;
+
+
+end
+

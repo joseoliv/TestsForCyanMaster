@@ -1,0 +1,7 @@
+package generic02.gb
+
+
+
+object Proto_IG2__<Int> implements IG2<Int>
+
+end

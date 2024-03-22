@@ -1,0 +1,21 @@
+package generic02.ga
+
+
+object SubSubG1<Int> extends G2<Int>
+          implements I2<Int>
+
+    func init  { super init    } 
+
+    func noop: I2<Int>  -> Array<Int>  {
+        let Array<Int> a = Array<Int> new; 
+        a add: (Int defaultValue) succ; 
+        return a
+    } 
+
+    func succ: (Int n)  -> Int  = n succ succ;
+
+    override func pred: (Int elem)  -> Int  = Int pred;
+
+
+end
+

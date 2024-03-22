@@ -1,0 +1,19 @@
+package funct
+
+
+object SubSubFunctionTNil<Int> extends SubFunctionTNil<Int>
+
+    func init  {
+        sum2 = Int defaultValue
+    } 
+
+    override func eval: (Int n)   {
+        sum2 = sum2 + (n succ)
+    } 
+
+    func getSum2 -> Int  = sum2;
+
+    private var Int sum2
+
+end
+

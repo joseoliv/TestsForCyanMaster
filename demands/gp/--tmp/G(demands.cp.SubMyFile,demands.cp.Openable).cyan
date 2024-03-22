@@ -1,0 +1,29 @@
+package demands.gp
+import demands.cp
+import demands.main
+
+@concept{*
+    demands.cp.SubMyFile subprototype demands.cp.Openable,
+    MyFile implements demands.cp.Openable
+*}
+ 
+object G<demands.cp.SubMyFile, demands.cp.Openable> 
+
+    func get -> demands.cp.Openable  { return demands.cp.SubMyFile    } 
+
+    func eval -> demands.cp.Openable  {
+        let demands.cp.Openable s = MyFile; 
+        return s
+    } 
+
+    func test  {
+        let r = demands.cp.SubMyFile; 
+        assert get == r;
+        ; 
+        assert eval == MyFile;
+    
+    } 
+
+
+end
+

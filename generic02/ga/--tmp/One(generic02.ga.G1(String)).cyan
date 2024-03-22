@@ -1,0 +1,10 @@
+package generic02.ga
+
+
+object One<generic02.ga.G1<String>> 
+
+    func strOne -> String  = generic02.ga.G1<String> prototypeName ++ " " ++ generic02.ga.G1<String> prototypeName;
+
+
+end
+

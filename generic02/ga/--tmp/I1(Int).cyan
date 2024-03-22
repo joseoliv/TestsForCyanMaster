@@ -1,0 +1,8 @@
+package generic02.ga
+
+
+public interface I1<Int>
+    func noop: I2<Int>  -> Array<Int> 
+    func succ: (Int n)  -> Int 
+end
+

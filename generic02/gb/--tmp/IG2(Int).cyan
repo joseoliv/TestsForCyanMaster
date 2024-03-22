@@ -1,0 +1,11 @@
+package generic02.gb
+
+
+public interface IG2<Int>
+    func nameGP -> String 
+    func name -> String 
+    func value -> G3<Int> 
+    func nameT -> String 
+    func check: (String tname)  
+end
+

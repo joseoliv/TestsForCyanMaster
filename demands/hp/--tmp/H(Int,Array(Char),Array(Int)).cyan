@@ -1,0 +1,26 @@
+package demands.hp
+
+@concept{*
+    Array<Int> in [ Array<Int>, Array<String> ],
+    Array<Int> implements Iterable<Int>,
+    Array<Char> implements Iterable<Char>,
+    Array<Int> subprototype Array<Int>
+*}
+ 
+object H<Int, Array<Char>, Array<Int>> 
+
+    func test  {
+        let rArray = Array<Int> new; 
+        assert rArray isA: Array<Int> || rArray isA: Array<String>;
+        ; 
+        for ch in Array<Char> {
+        }
+        var Array<Int> t = Array<Int>; 
+        let shouldBeTrue = t isA: Array<Int>; 
+        assert shouldBeTrue;
+    
+    } 
+
+
+end
+

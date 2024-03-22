@@ -1,0 +1,14 @@
+package ffm
+
+
+object FFM_OpTest
+
+    func init: Byte value {
+        self.value = value
+    }
+
+    func * (Byte n) -> Char = (value + n) asChar;
+    func - -> String = value asString ++ "sss";
+
+    let Byte value
+end

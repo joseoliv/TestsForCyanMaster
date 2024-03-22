@@ -1,0 +1,2 @@
+@echo off
+"C:\Program Files\Java\jdk1.8.0_291\bin\java" -cp "C:/Program Files/Java/jdk1.8.0_291/jre/lib/rt.jar";"C:\Dropbox\Cyan\lib\cyan.io.jar";"C:\Dropbox\Cyan\lib\cyan.math.jar";"C:\Dropbox\Cyan\lib\cyan.lang.jar";"C:\Dropbox\Cyan\lib";"C:\Dropbox\Cyan\cyanTests\java-for-master";"C:\Dropbox\Cyan\lib\cyanruntime.jar"  main.P

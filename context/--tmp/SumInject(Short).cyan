@@ -1,0 +1,15 @@
+package context
+
+
+object SumInject<Short> extends InjectObject<Short>
+
+    func init  { sum = Short    } 
+
+    override func eval: (Short item)   { sum = sum + item    } 
+
+    override func result -> Short  = sum;
+
+    private var Short sum
+
+end
+

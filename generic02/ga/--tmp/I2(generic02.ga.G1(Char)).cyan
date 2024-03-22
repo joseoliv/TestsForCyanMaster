@@ -1,0 +1,7 @@
+package generic02.ga
+
+
+public interface I2<generic02.ga.G1<Char>>
+    func pred: (generic02.ga.G1<Char> elem)  -> Int 
+end
+

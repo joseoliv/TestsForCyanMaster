@@ -1,0 +1,20 @@
+package runtimeReflection
+
+object TestRuntimeReflection
+
+    func init { n = 0 }
+    func init: Int n { self.n = n }
+    
+    func run {
+        var t = TestRuntimeReflection();
+        var s = "new";
+        assert (t prototype ?new) getN == 0;
+        assert (t `s) getN == 0;
+        assert (t prototype ?new: 7) getN == 7;
+        assert (t `s: 5) getN == 5;
+           
+    }
+    
+    @property
+    var Int n = 1;
+end

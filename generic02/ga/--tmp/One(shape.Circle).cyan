@@ -1,0 +1,10 @@
+package generic02.ga
+
+
+object One<shape.Circle> 
+
+    func strOne -> String  = shape.Circle prototypeName ++ " " ++ shape.Circle prototypeName;
+
+
+end
+

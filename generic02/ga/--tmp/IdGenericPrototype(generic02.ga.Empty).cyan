@@ -1,0 +1,26 @@
+package generic02.ga
+
+@concept{*
+    generic02.ga.Empty in [ generic02.ga.Empty ]
+*}
+ 
+object IdGenericPrototype<generic02.ga.Empty> 
+
+    func test  {
+        let mProto = "generic02.ga." ++ generic02.ga.Empty<Int> prototypeName; 
+        let stringM = (        @symbolToString("generic02.ga.Empty") ); 
+        assert mProto == "" ++ stringM ++ "<Int>";
+        ; 
+        var generic02.ga.Empty<Int> x = generic02.ga.Empty<Int> new; 
+        var generic02.ga.Empty<Int> y = generic02.ga.Empty<Int>(); 
+        let mInt = generic02.ga.Empty<Int> prototypeName; 
+        assert x prototypeName == mInt;
+        ; 
+        var typeof(generic02.ga.Empty<Int>) v = typeof(x) new; 
+        assert v prototypeName == "" ++ mInt;
+    
+    } 
+
+
+end
+

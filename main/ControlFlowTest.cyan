@@ -1,0 +1,461 @@
+package main
+
+import myExceptions
+import cyan.math
+
+object ControlFlowTest
+
+  func run { legal }
+  
+  func legal {
+    var m = 1;
+    m = m*m - (Math intAbs: m);
+    var i = 0;
+
+    i = 0;
+    repeat
+      for xyz in 0..1 {
+        while i < 5 {
+
+          try
+          finally { 
+            try
+            finally { 
+              break          // legal, no finally
+            }
+            //break          // unreachable
+          }
+          // ++i;   // unreachable
+        }
+      }
+    until 0 == 0;
+
+    i = 0;
+    while i == 0 {
+      try
+        i = 0;
+        while i == 0 {
+          ++i;
+          return Nil             // legal, no finally
+        }
+        if i == 0 {
+          throw ExceptionZero()
+        }
+      catch { (: ExceptionZero e :) 
+      };
+      ++i
+    }
+
+    if m == 0 {
+      for ch in 'a'..'e' {
+        i = 0;
+        try
+          while i == 0 {
+            ++i;
+          }
+          if i == 0 {
+            throw ExceptionZero()
+          }
+        catch { (: ExceptionZero e :) 
+        }
+        finally {
+          return Nil              // legal, no outer finally
+        }
+      }  
+    }
+    
+    try
+      if m == 0 {
+        try
+        finally {
+          return Nil         // legal, no finally
+        }
+      }
+    catch CatchAll;
+    
+    try
+      try
+      finally {
+        while i < 5 {
+          ++i;
+          return Nil     // legal, no finally
+        }
+      }
+    catch CatchAll;
+
+    try
+      try
+      finally {
+        if m == 0 {
+          for k in 1..5 {
+            return Nil     // legal, no finally
+          }
+        }
+      }
+    catch CatchAll;
+    
+    try
+      try
+      finally {
+        var k = 0;
+        repeat
+          if m == 0 {
+             return Nil     // legal, no finally
+          }
+        until k == 0;
+      }
+    catch CatchAll;
+
+    // *********
+    try
+      try
+      finally {
+        while i < 5 {
+          ++i;
+          break // legal
+        }
+      }
+    catch CatchAll
+    finally {  }
+
+    try
+      try
+      finally {
+        for k in 1..5 {
+          break           // legal
+        }
+      }
+    catch CatchAll
+    finally {  }
+    
+    try
+      try
+      finally {
+        var k = 0;
+        repeat
+          if m == 0 {
+            break            // legal
+          }
+        until k == 0;
+      }
+    catch CatchAll
+    finally {  }
+    
+    // *********    
+    
+    i = 0;
+    while i < 5 {
+      try
+        if m == 0 {
+          break          // legal
+        }
+      catch CatchAll;
+      ++i
+    }
+
+    i = 0;
+    repeat
+      while i < 5 {
+        try
+          if m == 0 {
+            break          // legal
+          }
+        catch CatchAll;
+        ++i
+      }
+    until 0 == 0;
+
+    i = 0;
+    repeat
+      for xyz in 0..1 {
+        while i < 5 {
+          try
+            break          // legal, no finally
+          catch CatchAll;
+          // ++i    // unreachable
+        }
+      }
+    until 0 == 0;
+
+    i = 0;
+    repeat
+      for xyz in 0..1 {
+        while i < 5 {
+          try
+          finally { }
+          ++i;
+          break          // legal, no finally
+        }
+      }
+    until 0 == 0;
+
+
+    i = 0;
+    repeat
+      for xyz in 0..1 {
+        while i < 5 {
+
+          try
+          finally { 
+            try
+            finally { 
+            }
+            break          // legal, no finally
+          }
+          // ++i;        // unreachable
+        }
+      }
+    until 0 == 0;
+
+    try
+      try
+      finally {
+        i = 0;
+        while i < 5 {
+          ++i;
+          return Nil     // legal
+        }
+      }
+    catch CatchAll;
+
+    if m == 0 {
+      try
+        try
+        finally {
+          for k in 1..5 {
+            return Nil     // legal
+          }
+        }
+      catch CatchAll;
+    }
+    
+    try
+      try
+      finally {
+        var k = 0;
+        repeat
+          if m == 0 {
+            return Nil     // legal
+          }
+        until k == 0;
+      }
+    catch CatchAll;
+
+
+    i = 0;
+    while i < 5 {
+      try
+        break          // legal
+      catch CatchAll;
+      // ++i           // unreachable
+    }
+
+    i = 0;
+    repeat
+      while i < 5 {
+        try
+          break          // legal
+        catch CatchAll;
+        // ++i           // unreachable
+      }
+    until 0 == 0;
+
+
+    i = 0;
+    repeat
+      for xyz in 0..1 {
+        while i < 5 {
+          try
+            break          // legal
+          catch CatchAll;
+          // ++i           // unreachable
+        }
+      }
+    until 0 == 0;
+
+    i = 0;
+    repeat
+      for xyz in 0..1 {
+        while i < 5 {
+
+          try
+          finally { 
+            try
+              break          // legal, no finally
+            catch CatchAll;
+            // break          // unreachable
+          }
+          // ++i;             // unreachable
+        }
+      }
+    until 0 == 0;
+
+  }
+
+/*
+  func run {
+    var i = 0;
+
+    i = 0;
+    repeat
+      for xyz in 0..1 {
+        while i < 5 {
+
+          try
+          finally { 
+            try
+              break          // illegal, finally
+            finally { 
+            }
+            break          // legal, no finally
+          }
+          ++i;
+        }
+      }
+    until 0 == 0;
+
+
+    try
+      try
+        try
+          try
+          finally {
+            return Nil     // error, finally
+          }
+        catch CatchAll;
+      catch CatchAll;
+    finally {  }
+
+    try
+      try
+      finally {
+        return Nil     // error, finally
+      }
+    catch CatchAll
+    finally {  }
+
+
+    try
+      try
+      finally {
+        i = 0;
+        while i < 5 {
+          ++i;
+          return Nil     // error, finally
+        }
+      }
+    catch CatchAll
+    finally {  }
+
+    try
+      try
+      finally {
+        for k in 1..5 {
+          return Nil     // error, finally
+        }
+      }
+    catch CatchAll
+    finally {  }
+    
+    try
+      try
+      finally {
+        var k = 0;
+        repeat
+          return Nil     // error, finally
+        until k == 0;
+      }
+    catch CatchAll
+    finally {  }
+
+    
+    for ch in 'a'..'z' {
+      try
+        while i == 0 {
+          ++i;
+          return Nil             // error, there is finally
+        }
+        if i == 0 {
+          throw ExceptionZero()
+        }
+      catch { (: ExceptionZero e :) 
+        break
+      }
+      finally {
+      }
+    }
+
+    i = 0;
+    while i < 2 {
+      try
+        i = 0;
+        if i == 0 {
+          throw ExceptionZero()
+        }
+      catch { (: ExceptionZero e :) 
+        break                        // error
+      }
+      finally {
+        assert 0 == 0;
+      }
+      ++i
+    }
+
+    i = 0;
+    repeat
+      try
+        while i == 0 {
+          ++i;
+          return Nil        // error
+        }
+        if i == 0 {
+          throw ExceptionZero()
+        }
+      catch { (: ExceptionZero e :) 
+        break  // error
+      }
+      finally {
+        assert 0 == 0;
+      }
+    until 0 == 0;
+    
+
+
+    i = 0;
+    while i < 5 {
+      try
+        break          // error, finally
+      catch CatchAll
+      finally { }
+      ++i
+    }
+
+    i = 0;
+    repeat
+      while i < 5 {
+        try
+          break          // error, finally
+        catch CatchAll
+        finally { }
+        ++i
+      }
+    until 0 == 0;
+
+
+    i = 0;
+    repeat
+      for xyz in 0..1 {
+        while i < 5 {
+          try
+            break          // error, finally
+          finally { }
+          ++i
+        }
+      }
+    until 0 == 0;
+
+
+  }    
+*/
+  
+end

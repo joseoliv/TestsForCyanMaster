@@ -1,0 +1,14 @@
+package generic02.ga
+
+
+open object IdPackageSuper<mult> 
+
+    func mult -> String  = "" ++ (    @symbolToString("mult") ) ++ (    @symbolToString("mult") );
+
+    func M1 -> String  = "ab";
+
+    func mult: (String s)  -> String  = s;
+
+
+end
+

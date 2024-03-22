@@ -1,0 +1,7 @@
+package inter
+
+
+
+object Proto_IAA__ implements IAA
+
+end

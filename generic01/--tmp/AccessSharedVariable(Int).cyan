@@ -1,0 +1,21 @@
+package generic01
+
+
+object AccessSharedVariable<Int> 
+
+    private func initShared  { self.value = Int    } 
+
+    func run  {
+        self.value = Int; 
+        value = Int; 
+        var t = Int; 
+        assert self.value == t;
+        ; 
+        assert value == t;
+    
+    } 
+
+    private shared var Int value
+
+end
+

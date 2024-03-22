@@ -1,0 +1,20 @@
+package generic02.ga
+
+
+object IdImplementsIdInter<mult> 
+          implements IdInter<mult>
+
+    override func mult: (Int i)  -> Int  = i;
+
+    override func mult: (String s) 
+        mult: (Int i)  -> String  = s ++ i;
+
+    override func mult: (String a) 
+        mult: (Int b) 
+        mult: (String c)  -> String  = a ++ b ++ c;
+
+    override func mult -> String  = "" ++ (    @symbolToString("mult") );
+
+
+end
+

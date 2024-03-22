@@ -1,0 +1,55 @@
+package generic02.ga
+
+@concept{*
+    mult in [ mult ]
+*}
+ 
+object IdPackage<mult> extends IdPackageSuper<mult>
+
+    func init  {     } 
+
+    func test  {
+        var mult.MultiA a = mult.MultiA new; 
+        let mult.MultiA b = mult.MultiA(); 
+        var typeof(mult.MultiA) c = mult.MultiA(); 
+        assert a sum: 0 == 0;
+        ; 
+        assert c sum: 1 == 1;
+        
+        ; 
+        let selfM = self mult; 
+        let superM = super mult; 
+        let superMdot = super M1; 
+        let superMdotabcde = super mult: "abcde"; 
+        let numberM = "mult"; 
+        let selfMdot = M1; 
+        let superMabc = super mult: "abc"; 
+        let selfMabc = self mult: "abc"; 
+        assert selfM == "mult";
+        ; 
+        let numberM2 = "" ++ numberM ++ numberM; 
+        assert superM == numberM2;
+        ; 
+        assert numberM2 == superM;
+        ; 
+        assert superMdot == "ab" &&
+               superMdotabcde == "abcde";
+        
+        ; 
+        assert superMabc == "abc" &&
+               selfMdot == "abc";
+        ; 
+        assert selfMabc == "mult:abc" &&
+               selfMdot == "abc";
+    
+    } 
+
+    override func mult -> String  = "" ++ "mult";
+
+    override func M1 -> String  = "abc";
+
+    override func mult: (String s)  -> String  = "mult:" ++ s;
+
+
+end
+

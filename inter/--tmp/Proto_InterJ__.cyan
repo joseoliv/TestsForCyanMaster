@@ -1,0 +1,7 @@
+package inter
+
+
+
+object Proto_InterJ__ implements InterJ
+
+end

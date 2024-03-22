@@ -1,0 +1,10 @@
+package funct
+
+
+object SubSubFunctionIntString<Int> extends SubFunctionIntString<Int>
+
+    override func eval: (Int n)  -> String  = "" ++ n ++ 1;
+
+
+end
+
