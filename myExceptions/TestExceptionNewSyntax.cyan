@@ -1,0 +1,518 @@
+package myExceptions
+
+import main
+
+object TestExceptionNewSyntax
+
+    func run {
+        exceptionTestNewSyntax
+    }
+
+    // method exceptionTest rewritten in the new try-catch statement
+    func exceptionTestNewSyntax {
+
+        var Int n = 0;
+        var String control = "";
+        try
+            Program throwExceptionTest0IntIfLT0: n;
+            Program throwExceptionTest1IntIfGT0: n;
+        catch { (: ExceptionTest0Int e :) control = "LT0" }
+        catch { (: ExceptionTest1Int e :) control = "GT0" };
+        assert control == "";
+
+        n = -1;
+        try
+            Program throwExceptionTest0IntIfLT0: n;
+            Program throwExceptionTest1IntIfGT0: n;
+            Program throwExceptionTest2IntIfEQ0: n;
+        catch { (: ExceptionTest0Int e :) control = "LT0" }
+        catch { (: ExceptionTest1Int e :) control = "GT0" }
+        catch { (: ExceptionTest2Int e :) control = "EQ0" };
+        assert control == "LT0";
+
+        n = 1;
+        try
+            Program throwExceptionTest0IntIfLT0: n;
+            Program throwExceptionTest1IntIfGT0: n;
+            Program throwExceptionTest2IntIfEQ0: n;
+        catch { (: ExceptionTest0Int e :) control = "LT0" }
+        catch { (: ExceptionTest1Int e :) control = "GT0" }
+        catch { (: ExceptionTest2Int e :) control = "EQ0" };
+        assert control == "GT0";
+
+        // *****************************
+
+        n = 0;
+        try
+            Program throwExceptionTest0IntIfLT0: n;
+            Program throwExceptionTest1IntIfGT0: n;
+            Program throwExceptionTest2IntIfEQ0: n;
+        catch { (: ExceptionTest0Int e :) control = "LT0" }
+        catch { (: ExceptionTest1Int e :) control = "GT0" }
+        catch { (: ExceptionTest2Int e :) control = "EQ0" };
+        assert control == "EQ0";
+
+        control = "";
+        try
+            Program call_throwExceptionTest0IntIfLT0: n;
+            Program call_throwExceptionTest1IntIfGT0: n;
+        catch { (: ExceptionTest0Int e :) control = "LT0" }
+        catch { (: ExceptionTest1Int e :) control = "GT0" };
+        assert control == "";
+
+        n = -1;
+        try
+            Program call_throwExceptionTest0IntIfLT0: n;
+            Program call_throwExceptionTest1IntIfGT0: n;
+            Program call_throwExceptionTest2IntIfEQ0: n;
+        catch { (: ExceptionTest0Int e :) control = "LT0" }
+        catch { (: ExceptionTest1Int e :) control = "GT0" }
+        catch { (: ExceptionTest2Int e :) control = "EQ0" };
+        assert control == "LT0";
+
+        n = 1;
+        try
+            Program call_throwExceptionTest0IntIfLT0: n;
+            Program call_throwExceptionTest1IntIfGT0: n;
+            Program call_throwExceptionTest2IntIfEQ0: n;
+        catch { (: ExceptionTest0Int e :) control = "LT0" }
+        catch { (: ExceptionTest1Int e :) control = "GT0" }
+        catch { (: ExceptionTest2Int e :) control = "EQ0" };
+        assert control == "GT0";
+
+        // #########################################
+        n = 0;
+        try
+            Program call_throwExceptionTest0IntIfLT0: n;
+            Program call_throwExceptionTest1IntIfGT0: n;
+            Program call_throwExceptionTest2IntIfEQ0: n;
+        catch { (: ExceptionTest0Int e :) control = "LT0" }
+        catch { (: ExceptionTest1Int e :) control = "GT0" }
+        catch { (: ExceptionTest2Int e :) control = "EQ0" };
+        assert control == "EQ0";
+
+
+        //   .............
+
+        n = -1;
+        try
+            Program call_throwExceptionTest0IntIfLT0: n;
+            Program call_throwExceptionTest1IntIfGT0: n;
+            Program call_throwExceptionTest2IntIfEQ0: n;
+        catch { (: ExceptionTest0Int e :) control = "LT0" }
+        catch { (: ExceptionTest1Int e :) control = "GT0" }
+        catch { (: ExceptionTest2Int e :) control = "EQ0" }
+        finally { control = control ++ "finally" };
+        assert control == "LT0finally";
+
+        n = 1;
+        try
+            Program call_throwExceptionTest0IntIfLT0: n;
+            Program call_throwExceptionTest1IntIfGT0: n;
+            Program call_throwExceptionTest2IntIfEQ0: n;
+        catch { (: ExceptionTest0Int e :) control = "LT0" }
+        catch { (: ExceptionTest1Int e :) control = "GT0" }
+        catch { (: ExceptionTest2Int e :) control = "EQ0" }
+        finally { control = control ++ "finally" };
+        assert control == "GT0finally";
+
+        n = 0;
+        try
+            Program call_throwExceptionTest0IntIfLT0: n;
+            Program call_throwExceptionTest1IntIfGT0: n;
+            Program call_throwExceptionTest2IntIfEQ0: n;
+        catch { (: ExceptionTest0Int e :) control = "LT0" }
+        catch { (: ExceptionTest1Int e :) control = "GT0" }
+        catch { (: ExceptionTest2Int e :) control = "EQ0" }
+        finally { control = control ++ "finally" };
+        assert control == "EQ0finally";
+
+        // **********************************
+        control = "";
+        n = 5;
+        try
+            try
+                Program call_throwExceptionTest0StringEQ5: n;
+                Program call_throwExceptionTest0IntIfLT0: n;
+                Program call_throwExceptionTest1IntIfGT0: n;
+                Program call_throwExceptionTest2IntIfEQ0: n;
+            catch { (: ExceptionTest0Int e :) control = "LT0" }
+            catch { (: ExceptionTest1Int e :) control = "GT0" }
+            catch { (: ExceptionTest2Int e :) control = "EQ0" }
+            finally { control = control ++ "finally" };
+        catch { (: ExceptionTest0String e :) control = control ++ "000" };
+
+        assert control == "finally000";
+
+        control = "";
+        n = 5;
+        try
+            Program call_throwExceptionTest0StringEQ5: n;
+            Program call_throwExceptionTest0IntIfLT0: n;
+            Program call_throwExceptionTest1IntIfGT0: n;
+            Program call_throwExceptionTest2IntIfEQ0: n;
+        catch { (: ExceptionTest0Int e :) control = "LT0" }
+        catch { (: ExceptionTest1Int e :) control = "GT0" }
+        catch { (: ExceptionTest2Int e :) control = "EQ0" }
+        catch { (: ExceptionTest0String e :) control = "EQ5" }
+        finally { control = control ++ "finally" };
+        assert control == "EQ5finally";
+
+        // *************************************
+
+
+        n = -1;
+        try
+            Program call_throwExceptionTest0IntIfLT0: n;
+            Program call_throwExceptionTest1IntIfGT0: n;
+            Program call_throwExceptionTest2IntIfEQ0: n;
+        catch CatchExceptionTest012Int(control);
+        assert control == "LT0";
+
+        n = 1;
+        try
+            Program call_throwExceptionTest0IntIfLT0: n;
+            Program call_throwExceptionTest1IntIfGT0: n;
+            Program call_throwExceptionTest2IntIfEQ0: n;
+        catch CatchExceptionTest012Int(control);
+        assert control == "GT0";
+
+        n = 0;
+        try
+            Program call_throwExceptionTest0IntIfLT0: n;
+            Program call_throwExceptionTest1IntIfGT0: n;
+            Program call_throwExceptionTest2IntIfEQ0: n;
+        catch CatchExceptionTest012Int(control);
+        assert control == "EQ0";
+
+
+        // *************************************
+
+
+        n = -1;
+        try
+            Program call_throwExceptionTest0IntIfLT0: n;
+            Program call_throwExceptionTest1IntIfGT0: n;
+            Program call_throwExceptionTest2IntIfEQ0: n;
+        catch CatchExceptionTest012Int(control)
+        finally { control = control ++ "finally" };
+        assert control == "LT0finally";
+
+        n = 1;
+        try
+            Program call_throwExceptionTest0IntIfLT0: n;
+            Program call_throwExceptionTest1IntIfGT0: n;
+            Program call_throwExceptionTest2IntIfEQ0: n;
+        catch CatchExceptionTest012Int(control)
+        finally { control = control ++ "finally" };
+        assert control == "GT0finally";
+
+        n = 0;
+        try
+            Program call_throwExceptionTest0IntIfLT0: n;
+            Program call_throwExceptionTest1IntIfGT0: n;
+            Program call_throwExceptionTest2IntIfEQ0: n;
+        catch CatchExceptionTest012Int(control)
+        finally { control = control ++ "finally" };
+        assert control == "EQ0finally";
+
+
+
+        // **********************************
+        control = "";
+        n = 5;
+        try
+            try
+                Program call_throwExceptionTest0StringEQ5: n;
+                Program call_throwExceptionTest0IntIfLT0: n;
+                Program call_throwExceptionTest1IntIfGT0: n;
+                Program call_throwExceptionTest2IntIfEQ0: n;
+            catch { (: ExceptionTest1Int e :) control = "GT0" }
+            catch { (: ExceptionTest0Int e :) control = "LT0" }
+            catch { (: ExceptionTest2Int e :) control = "EQ0" }
+            finally { control = control ++ "finally" };
+        catch { (: ExceptionTest0String e :) control = control ++ "EQ5" };
+
+        assert control == "finallyEQ5";
+
+        control = "";
+        n = 5;
+        try
+            Program call_throwExceptionTest0StringEQ5: n;
+            Program call_throwExceptionTest0IntIfLT0: n;
+            Program call_throwExceptionTest1IntIfGT0: n;
+            Program call_throwExceptionTest2IntIfEQ0: n;
+        catch { (: ExceptionTest2Int e :) control = "EQ0" }
+        catch { (: ExceptionTest0Int e :) control = "LT0" }
+        catch { (: ExceptionTest0String e :) control = "EQ5" }
+        catch { (: ExceptionTest1Int e :) control = "GT0" }
+        finally { control = control ++ "finally" };
+        assert control == "EQ5finally";
+
+        // *************************************
+
+
+        n = -1;
+        try
+            Program call_throwExceptionTest1IntIfGT0: n;
+            Program call_throwExceptionTest0IntIfLT0: n;
+            Program call_throwExceptionTest2IntIfEQ0: n;
+        catch CatchExceptionTest012Int(control);
+        assert control == "LT0";
+
+        n = 1;
+        try
+            Program call_throwExceptionTest2IntIfEQ0: n;
+            Program call_throwExceptionTest1IntIfGT0: n;
+            Program call_throwExceptionTest0IntIfLT0: n;
+        catch CatchExceptionTest012Int(control);
+        assert control == "GT0";
+
+        n = 0;
+        try
+            Program call_throwExceptionTest0IntIfLT0: n;
+            Program call_throwExceptionTest2IntIfEQ0: n;
+            Program call_throwExceptionTest1IntIfGT0: n;
+        catch CatchExceptionTest012Int(control);
+        assert control == "EQ0";
+
+
+
+        //   ###################################
+
+        let f0 = { (: ExceptionTest0Int e :) control = "LT0" };
+        let f1 = { (: ExceptionTest1Int e :) control = "GT0" };
+        let f2 = { (: ExceptionTest2Int e :) control = "EQ0" };
+        n = -1;
+        try
+            Program call_throwExceptionTest0IntIfLT0: n;
+            Program call_throwExceptionTest1IntIfGT0: n;
+            Program call_throwExceptionTest2IntIfEQ0: n;
+        catch f0
+        catch f1
+        catch f2
+        finally { control = control ++ "finally" };
+        assert control == "LT0finally";
+
+        n = 1;
+        try
+            Program call_throwExceptionTest0IntIfLT0: n;
+            Program call_throwExceptionTest1IntIfGT0: n;
+            Program call_throwExceptionTest2IntIfEQ0: n;
+        catch f0
+        catch f1
+        catch f2
+        finally { control = control ++ "finally" };
+        assert control == "GT0finally";
+
+        n = 0;
+        try
+            Program call_throwExceptionTest0IntIfLT0: n;
+            Program call_throwExceptionTest1IntIfGT0: n;
+            Program call_throwExceptionTest2IntIfEQ0: n;
+        catch f0
+        catch f1
+        catch f2
+        finally { control = control ++ "finally" };
+        assert control == "EQ0finally";
+
+        TestException resetTraceString;
+        TestException test: -1;
+        assert TestException traceString == "CatchNeg(-1) endProcess endTest";
+
+        TestException resetTraceString;
+        TestException test: 0;
+        assert TestException traceString == "CatchZeroBig-CatchZero(0) endTest";
+
+        TestException resetTraceString;
+        TestException test: 1;
+        assert TestException traceString == " endProcess endTest";  // CatchZeroBig-CatchBig(1) endTest
+
+        TestException resetTraceString;
+        TestException test: 2;
+        // printexpr TestException traceString;
+        assert TestException traceString == "CatchEven(2) endTest";
+
+        TestException resetTraceString;
+        TestException test: 2001;
+        assert TestException traceString == "CatchZeroBig-CatchBig(2001) endTest";
+
+        TestException resetTraceString;
+        TestException test: 5;
+        assert TestException traceString == "CatchNum(5) endTest";
+
+        var String s = "";
+
+        for elem5 in 0..5 {
+            try
+                {
+                    if elem5 == 0 { throw: ExceptionZero() }
+                    if elem5%2 == 0 { throw: ExceptionEven(elem5) }
+                    if elem5 == 5 { throw: ExceptionFive(elem5) }
+                } hideException;
+                s = s ++ elem5
+            catch CatchAll;
+
+        }
+        assert s == "012345";
+
+
+        // *****************************
+
+        n = 0;
+        try
+            Program throwExceptionTest0IntIfLT0: n;
+            Program throwExceptionTest1IntIfGT0: n;
+            Program throwExceptionTest2IntIfEQ0: n;
+        catch { (: ExceptionTest0Int e :) control = "LT0" }
+        catch { (: ExceptionTest1Int | ExceptionTest2Int e :) control = "GT0EQ0" };
+        assert control == "GT0EQ0";
+
+        n = -1;
+        try
+            Program call_throwExceptionTest0IntIfLT0: n;
+            Program call_throwExceptionTest1IntIfGT0: n;
+            Program call_throwExceptionTest2IntIfEQ0: n;
+        catch { (: ExceptionTest1Int e :) control = "GT0" }
+        catch { (: ExceptionTest2Int | ExceptionTest0Int e :) control = "EQ0LT0" };
+        assert control == "EQ0LT0";
+
+        n = -1;
+        try
+            Program call_throwExceptionTest0IntIfLT0: n;
+            Program call_throwExceptionTest1IntIfGT0: n;
+            Program call_throwExceptionTest2IntIfEQ0: n;
+        catch { (: ExceptionTest0Int e :) control = "LT0" }
+        catch { (: ExceptionTest1Int e :) control = "GT0" }
+        catch { (: ExceptionTest2Int | ExceptionTest0Int e :) control = "EQ0LT0" };
+        assert control == "LT0";
+
+
+        n = 1;
+        try
+            Program call_throwExceptionTest0IntIfLT0: n;
+            Program call_throwExceptionTest1IntIfGT0: n;
+            Program call_throwExceptionTest2IntIfEQ0: n;
+        catch { (: ExceptionTest1Int | ExceptionTest0Int e :) control = "GT0LT0" }
+        catch { (: ExceptionTest0Int e :) control = "LT0" }
+        catch { (: ExceptionTest1Int e :) control = "GT0" }
+        catch { (: ExceptionTest2Int e :) control = "EQ0" };
+        assert control == "GT0LT0";
+
+        //var ExceptionConverter<ExceptionTwo, ExceptionPowerOfTwo,
+        //                 ExceptionTest0Int, ExceptionZero> .# writeCode ec3333;
+        s = "";
+        n = 1;
+        try
+            try
+                try
+                    if n == 1 { throw: ExceptionTest0Int(-1) }
+                    if n == 2 { throw: ExceptionTwo() }
+                catch ExceptionConverter<ExceptionTwo, ExceptionPowerOfTwo,
+                         ExceptionTest0Int, ExceptionZero>;
+            catch { (: ExceptionZero e :)
+                s = "zero"
+            }
+            catch { (: ExceptionTest0Int e :)
+                s = "0Int"
+            }
+            catch { (: ExceptionTwo e :)
+                s = "2"
+            }
+            catch { (: ExceptionPowerOfTwo e :)
+                s = "power2"
+            };
+        catch { (: CyException e :)
+            s = "all"
+        };
+        assert s == "zero";
+
+        s = "";
+        n = 2;
+        try
+            try
+                try
+                    if n == 1 { throw: ExceptionTest0Int(-1) }
+                    if n == 2 { throw: ExceptionTwo() }
+                catch ExceptionConverter<ExceptionTwo, ExceptionPowerOfTwo,
+                         ExceptionTest0Int, ExceptionZero>;
+            catch { (: ExceptionZero e :)
+                s = "zero"
+            }
+            catch { (: ExceptionTest0Int e :)
+                s = "0Int"
+            }
+            catch { (: ExceptionTwo e :)
+                s = "2"
+            }
+            catch { (: ExceptionPowerOfTwo e :)
+                s = "power2"
+            };
+        catch { (: CyException e :)
+            s = "all"
+        };
+        assert s == "power2";
+
+
+        s = "";
+        for ii in 0..2 {
+
+            try
+                try
+                    try
+                        if ii == 1 { throw: ExceptionTest0Int(-1) }
+                        if ii == 2 { throw: ExceptionTwo() }
+                    catch ExceptionEncapsulator<ExceptionTwo, ExceptionPowerOfTwo,
+                             ExceptionTest0Int, ExceptionZero, ExceptionContainer>;
+                catch { (: ExceptionZero e :)
+                    s = s ++ "zero"
+                }
+                catch { (: ExceptionTest0Int e :)
+                    s = s ++ "0Int"
+                }
+                catch { (: ExceptionTwo e :)
+                    s = s ++ "2"
+                }
+                catch { (: ExceptionPowerOfTwo e :)
+                    s = s ++ "power2"
+                };
+            catch { (: ExceptionContainer e :)
+                if ii == 1 { assert  (e getException) isA: ExceptionTest0Int; }
+                if ii == 2 { assert  (e getException) isA: ExceptionTwo; }
+
+                s = s ++ ii
+            };
+
+        }
+        assert s == "12";
+
+
+        // *************************
+        TestException resetTraceString;
+        try
+            throw ExceptionZeroWithCatch();
+        catch ExceptionZeroWithCatch;
+        assert TestException traceString == "0-with-catch";
+
+
+
+        // *************************
+        s = "";
+        {
+            try
+                s = "0";
+                throw: CyException
+            catch { (: CyException e :)
+               s = s ++ "1";
+               throw: e
+            }
+            finally {
+               s = s ++ "2";
+            };
+        } hideException;
+        assert s == "012";
+
+
+    }
+
+end

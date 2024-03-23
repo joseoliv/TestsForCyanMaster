@@ -64,23 +64,20 @@ object Program implements ISumMult
     
     func run {
     
-        
         var Function<Int, Int, Int, Int> fiiii;
     
         var Function<Int, Int, Int> fiii;
 
         var Program ppp;
 
-        /*
         TestCyan() run;
         UnionTest() run;
         TestCyan11() run;
         ffm.Test() run;
-        */
         fileTest.FileTest() run;
         CastTest() run;
         ControlFlowTest() run;
-        
+
         demands.main.Program() test;
         ReachabilityAssignmentTesting() run;
         graph.GraphTest run;
@@ -1528,7 +1525,7 @@ object Program implements ISumMult
         catch { (: CyException e :)
             hadException = true;
             assert e prototypeName == "ExceptionCannotCallAbstractMethod";
-        };
+        }
         assert hadException == true;
         
         hadException = false;
@@ -1538,7 +1535,7 @@ object Program implements ISumMult
         catch { (: CyException e :)
             hadException = true;
             assert e prototypeName == "ExceptionCannotCallAbstractMethod";
-        };
+        }
         assert hadException == true;
 
 

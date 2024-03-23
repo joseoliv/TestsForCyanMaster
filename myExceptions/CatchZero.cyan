@@ -1,0 +1,8 @@
+package myExceptions
+
+
+object CatchZero
+    func eval: (ExceptionZero e) {
+        TestException trace: "CatchZeroBig-CatchZero(" ++ e number ++ ")"
+    }
+end

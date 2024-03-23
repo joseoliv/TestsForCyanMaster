@@ -1,7 +1,0 @@
-package demands.cp
-
-
-
-object Proto_Openable__ implements Openable
-
-end

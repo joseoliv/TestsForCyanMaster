@@ -1,7 +1,0 @@
-package inter
-
-
-
-object Proto_ISumMult__ implements ISumMult
-
-end

@@ -1,7 +1,0 @@
-package generic02.ga
-
-
-
-object Proto_I2__<Char> implements I2<Char>
-
-end

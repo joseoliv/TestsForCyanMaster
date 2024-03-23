@@ -1,7 +1,0 @@
-package generic02.gb
-
-
-
-object Proto_IG2__<generic02.protoA.Y> implements IG2<generic02.protoA.Y>
-
-end

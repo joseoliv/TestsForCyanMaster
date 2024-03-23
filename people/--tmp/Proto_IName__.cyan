@@ -1,7 +1,0 @@
-package people
-
-
-
-object Proto_IName__ implements IName
-
-end

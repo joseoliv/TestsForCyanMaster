@@ -1,7 +1,0 @@
-package generic02.ga
-
-
-
-object Proto_IdInter__<mult> implements IdInter<mult>
-
-end

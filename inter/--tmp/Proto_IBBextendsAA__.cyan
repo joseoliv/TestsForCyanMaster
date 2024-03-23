@@ -1,7 +1,0 @@
-package inter
-
-
-
-object Proto_IBBextendsAA__ implements IBBextendsAA
-
-end

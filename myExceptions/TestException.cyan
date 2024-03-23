@@ -32,7 +32,8 @@ object TestException
            
         {  
            process: n
-        } catch: CatchZeroBig
+        } catch: CatchZero
+          catch: CatchBig
           catch: CatchEven
           catch: CatchNum;
         TestException trace: " endTest";

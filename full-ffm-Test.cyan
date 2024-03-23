@@ -1,0 +1,2570 @@
+package ffm
+
+
+object Test
+
+
+    func run {
+ 
+    
+        let carol = FFM_Test("Carolina", 7);
+        let livia = FFM_Test("Livia", 10);
+
+
+
+        let sa0b0c0_carol =   @pushCompilationContext(atisemAn_id_112, "changeFunctionForMethod", "the project file ", "C:\Dropbox\Cyan\lib\cyan\lang\allInterfaces.iyan", 82)  { (: eval: ffm.FFM_Test var1 eval:  eval:  eval:  :) ^var1 aaa:  bbb:  ccc:  }  @popCompilationContext(atisemAn_id_112, "cyan.lang", "Function<ffm.FFM_Test><none><none><none,String>") 
+;
+        let sa0b0c0_livia =   @pushCompilationContext(atisemAn_id_113, "changeFunctionForMethod", "the project file ", "C:\Dropbox\Cyan\lib\cyan\lang\allInterfaces.iyan", 82)  { (: eval: ffm.FFM_Test var2 eval:  eval:  eval:  :) ^var2 aaa:  bbb:  ccc:  }  @popCompilationContext(atisemAn_id_113, "cyan.lang", "Function<ffm.FFM_Test><none><none><none,String>") 
+;
+
+          @pushCompilationContextStatement(atisemAn_id_114, "macro(assert)", ffm, "C:\Dropbox\Cyan\cyanTests\master\ffm\Test.cyan", 18) 
+         if !(sa0b0c0_carol eval: carol
+    eval: 
+    eval: 
+    eval:  == "Carolina 7aaa:bbb:ccc:") {
+                  "Assert failed in line 18 of prototype 'ffm.Test'" println;
+                  "Assert expression: 'sa0b0c0_carol eval: carol\n    eval: \n    eval: \n    eval:  == \"Carolina 7aaa:bbb:ccc:\"'" println;
+                  };
+ @popCompilationContext(atisemAn_id_114) 
+ 
+          @pushCompilationContextStatement(atisemAn_id_115, "macro(assert)", ffm, "C:\Dropbox\Cyan\cyanTests\master\ffm\Test.cyan", 19) 
+         if !(sa0b0c0_carol eval: livia
+    eval: 
+    eval: 
+    eval:  == "Livia 10aaa:bbb:ccc:") {
+                  "Assert failed in line 19 of prototype 'ffm.Test'" println;
+                  "Assert expression: 'sa0b0c0_carol eval: livia\n    eval: \n    eval: \n    eval:  == \"Livia 10aaa:bbb:ccc:\"'" println;
+                  };
+ @popCompilationContext(atisemAn_id_115) 
+ 
+          @pushCompilationContextStatement(atisemAn_id_116, "macro(assert)", ffm, "C:\Dropbox\Cyan\cyanTests\master\ffm\Test.cyan", 20) 
+         if !(sa0b0c0_livia eval: carol
+    eval: 
+    eval: 
+    eval:  == "Carolina 7aaa:bbb:ccc:") {
+                  "Assert failed in line 20 of prototype 'ffm.Test'" println;
+                  "Assert expression: 'sa0b0c0_livia eval: carol\n    eval: \n    eval: \n    eval:  == \"Carolina 7aaa:bbb:ccc:\"'" println;
+                  };
+ @popCompilationContext(atisemAn_id_116) 
+ 
+          @pushCompilationContextStatement(atisemAn_id_117, "macro(assert)", ffm, "C:\Dropbox\Cyan\cyanTests\master\ffm\Test.cyan", 21) 
+         if !(sa0b0c0_livia eval: livia
+    eval: 
+    eval: 
+    eval:  == "Livia 10aaa:bbb:ccc:") {
+                  "Assert failed in line 21 of prototype 'ffm.Test'" println;
+                  "Assert expression: 'sa0b0c0_livia eval: livia\n    eval: \n    eval: \n    eval:  == \"Livia 10aaa:bbb:ccc:\"'" println;
+                  };
+ @popCompilationContext(atisemAn_id_117) 
+ 
+
+        let fm1_carol =   @pushCompilationContext(atisemAn_id_118, "changeFunctionForMethod", "the project file ", "C:\Dropbox\Cyan\lib\cyan\lang\allInterfaces.iyan", 80)  {  ^FFM_Test("Carolina", 7) m1 }  @popCompilationContext(atisemAn_id_118, "cyan.lang", "Function<Int>") 
+;
+        let fm1_livia =   @pushCompilationContext(atisemAn_id_119, "changeFunctionForMethod", "the project file ", "C:\Dropbox\Cyan\lib\cyan\lang\allInterfaces.iyan", 80)  {  ^FFM_Test("Livia", 10) m1 }  @popCompilationContext(atisemAn_id_119, "cyan.lang", "Function<Int>") 
+;
+         @markDeletedCode(1)   @pushCompilationContextStatement(atisemAn_id_120, "macro(assert)", ffm, "C:\Dropbox\Cyan\cyanTests\master\ffm\Test.cyan", 25) 
+         if !(fm1_carol eval == 7 && fm1_livia eval == 10) {
+                  "Assert failed in line 25 of prototype 'ffm.Test'" println;
+                  "Assert expression: 'fm1_carol eval == 7 && fm1_livia eval == 10'" println;
+                  };
+ @popCompilationContext(atisemAn_id_120) 
+ 
+
+
+        var sm1 =   @pushCompilationContext(atisemAn_id_122, "changeFunctionForMethod", "the project file ", "C:\Dropbox\Cyan\lib\cyan\lang\allInterfaces.iyan", 82)  { (: ffm.FFM_Test var3 :) ^var3 m1 }  @popCompilationContext(atisemAn_id_122, "cyan.lang", "Function<ffm.FFM_Test,Int>") 
+;
+         @markDeletedCode(1)   @pushCompilationContextStatement(atisemAn_id_123, "macro(assert)", ffm, "C:\Dropbox\Cyan\cyanTests\master\ffm\Test.cyan", 30) 
+         if !(sm1 eval: carol == 7 && sm1 eval: livia == 10) {
+                  "Assert failed in line 30 of prototype 'ffm.Test'" println;
+                  "Assert expression: 'sm1 eval: carol == 7 && sm1 eval: livia == 10'" println;
+                  };
+ @popCompilationContext(atisemAn_id_123) 
+ 
+        sm1 =   @pushCompilationContext(atisemAn_id_124, "changeFunctionForMethod", "the project file ", "C:\Dropbox\Cyan\lib\cyan\lang\allInterfaces.iyan", 82)  { (: ffm.FFM_Test var4 :) ^var4 m1 }  @popCompilationContext(atisemAn_id_124, "cyan.lang", "Function<ffm.FFM_Test,Int>") 
+;
+         @markDeletedCode(1)   @pushCompilationContextStatement(atisemAn_id_125, "macro(assert)", ffm, "C:\Dropbox\Cyan\cyanTests\master\ffm\Test.cyan", 33) 
+         if !(sm1 eval: carol == 7 && sm1 eval: livia == 10) {
+                  "Assert failed in line 33 of prototype 'ffm.Test'" println;
+                  "Assert expression: 'sm1 eval: carol == 7 && sm1 eval: livia == 10'" println;
+                  };
+ @popCompilationContext(atisemAn_id_125) 
+ 
+
+        //let test_sa0b0c0_carol = carol functionForMethodWithSelf: "aaa:0 bbb:0 ccc:0";
+
+        var Test .# writeCode xyx;
+        
+          @pushCompilationContextStatement(atisemAn_id_130, "macro(assert)", ffm, "C:\Dropbox\Cyan\cyanTests\master\ffm\Test.cyan", 40) 
+         if !(( {  ^carol m2 } ) eval asString == "Carolina 7") {
+                  "Assert failed in line 40 of prototype 'ffm.Test'" println;
+                  "Assert expression: '( {  ^carol m2 } ) eval asString == \"Carolina 7\"'" println;
+                  };
+ @popCompilationContext(atisemAn_id_130) 
+ 
+          @pushCompilationContextStatement(atisemAn_id_132, "macro(assert)", ffm, "C:\Dropbox\Cyan\cyanTests\master\ffm\Test.cyan", 41) 
+         if !(( {  ^livia m2 } ) eval asString == "Livia 10") {
+                  "Assert failed in line 41 of prototype 'ffm.Test'" println;
+                  "Assert expression: '( {  ^livia m2 } ) eval asString == \"Livia 10\"'" println;
+                  };
+ @popCompilationContext(atisemAn_id_132) 
+ 
+          @pushCompilationContextStatement(atisemAn_id_134, "macro(assert)", ffm, "C:\Dropbox\Cyan\cyanTests\master\ffm\Test.cyan", 42) 
+         if !((( { (: ffm.FFM_Test var5 :) ^var5 m2 } ) eval: carol) asString == "Carolina 7") {
+                  "Assert failed in line 42 of prototype 'ffm.Test'" println;
+                  "Assert expression: '(( { (: ffm.FFM_Test var5 :) ^var5 m2 } ) eval: carol) asString == \"Carolina 7\"'" println;
+                  };
+ @popCompilationContext(atisemAn_id_134) 
+ 
+          @pushCompilationContextStatement(atisemAn_id_136, "macro(assert)", ffm, "C:\Dropbox\Cyan\cyanTests\master\ffm\Test.cyan", 43) 
+         if !((( { (: ffm.FFM_Test var6 :) ^var6 m2 } ) eval: carol) asString == "Carolina 7") {
+                  "Assert failed in line 43 of prototype 'ffm.Test'" println;
+                  "Assert expression: '(( { (: ffm.FFM_Test var6 :) ^var6 m2 } ) eval: carol) asString == \"Carolina 7\"'" println;
+                  };
+ @popCompilationContext(atisemAn_id_136) 
+ 
+          @pushCompilationContextStatement(atisemAn_id_138, "macro(assert)", ffm, "C:\Dropbox\Cyan\cyanTests\master\ffm\Test.cyan", 44) 
+         if !((( { (: ffm.FFM_Test var7 :) ^var7 m2 } ) eval: livia) asString == "Livia 10") {
+                  "Assert failed in line 44 of prototype 'ffm.Test'" println;
+                  "Assert expression: '(( { (: ffm.FFM_Test var7 :) ^var7 m2 } ) eval: livia) asString == \"Livia 10\"'" println;
+                  };
+ @popCompilationContext(atisemAn_id_138) 
+ 
+          @pushCompilationContextStatement(atisemAn_id_140, "macro(assert)", ffm, "C:\Dropbox\Cyan\cyanTests\master\ffm\Test.cyan", 45) 
+         if !((( { (: ffm.FFM_Test var8 :) ^var8 m2 } ) eval: livia) asString == "Livia 10") {
+                  "Assert failed in line 45 of prototype 'ffm.Test'" println;
+                  "Assert expression: '(( { (: ffm.FFM_Test var8 :) ^var8 m2 } ) eval: livia) asString == \"Livia 10\"'" println;
+                  };
+ @popCompilationContext(atisemAn_id_140) 
+ 
+        
+        
+        let a3b2c2_carol =   @pushCompilationContext(atisemAn_id_142, "changeFunctionForMethod", "the project file ", "C:\Dropbox\Cyan\lib\cyan\lang\allInterfaces.iyan", 80)  { (: eval: cyan.lang.String var10, cyan.lang.Int var11, cyan.lang.Char var12 eval: cyan.lang.Int var13, cyan.lang.Char var14 eval: cyan.lang.Char var15, cyan.lang.String var16 :) ^carol aaa:  var10,  var11,  var12 bbb:  var13,  var14 ccc:  var15,  var16 }  @popCompilationContext(atisemAn_id_142, "cyan.lang", "Function<String,Int,Char><Int,Char><Char,String,String>") 
+;
+
+        /*
+        Out println: (a3b2c2_carol eval: "0", 1, '2' eval: 3, '4' eval: '5', "6");
+        System exit: 0;
+        */
+
+         @markDeletedCode(1)   @pushCompilationContextStatement(atisemAn_id_143, "macro(assert)", ffm, "C:\Dropbox\Cyan\cyanTests\master\ffm\Test.cyan", 55) 
+         if !(a3b2c2_carol eval: "0", 1, '2'
+    eval: 3, '4'
+    eval: '5', "6" == "Carolina 70123456") {
+                  "Assert failed in line 55 of prototype 'ffm.Test'" println;
+                  "Assert expression: 'a3b2c2_carol eval: \"0\", 1, \'2\'\n    eval: 3, \'4\'\n    eval: \'5\', \"6\" == \"Carolina 70123456\"'" println;
+                  };
+ @popCompilationContext(atisemAn_id_143) 
+ 
+        let a3b2c2_livia =   @pushCompilationContext(atisemAn_id_144, "changeFunctionForMethod", "the project file ", "C:\Dropbox\Cyan\lib\cyan\lang\allInterfaces.iyan", 80)  { (: eval: cyan.lang.String var18, cyan.lang.Int var19, cyan.lang.Char var20 eval: cyan.lang.Int var21, cyan.lang.Char var22 eval: cyan.lang.Char var23, cyan.lang.String var24 :) ^livia aaa:  var18,  var19,  var20 bbb:  var21,  var22 ccc:  var23,  var24 }  @popCompilationContext(atisemAn_id_144, "cyan.lang", "Function<String,Int,Char><Int,Char><Char,String,String>") 
+;
+         @markDeletedCode(1)   @pushCompilationContextStatement(atisemAn_id_145, "macro(assert)", ffm, "C:\Dropbox\Cyan\cyanTests\master\ffm\Test.cyan", 58) 
+         if !(a3b2c2_livia eval: "0", 1, '2'
+    eval: 3, '4'
+    eval: '5', "6" == "Livia 100123456") {
+                  "Assert failed in line 58 of prototype 'ffm.Test'" println;
+                  "Assert expression: 'a3b2c2_livia eval: \"0\", 1, \'2\'\n    eval: 3, \'4\'\n    eval: \'5\', \"6\" == \"Livia 100123456\"'" println;
+                  };
+ @popCompilationContext(atisemAn_id_145) 
+ 
+        // Out println: (a3b2c2_livia  eval: "0", 1, '2' eval: 3, '4' eval: '5', "6");
+
+        let sa3b2c2_carol =   @pushCompilationContext(atisemAn_id_147, "changeFunctionForMethod", "the project file ", "C:\Dropbox\Cyan\lib\cyan\lang\allInterfaces.iyan", 82)  { (: eval: ffm.FFM_Test var25 eval: cyan.lang.String var26, cyan.lang.Int var27, cyan.lang.Char var28 eval: cyan.lang.Int var29, cyan.lang.Char var30 eval: cyan.lang.Char var31, cyan.lang.String var32 :) ^var25 aaa:  var26,  var27,  var28 bbb:  var29,  var30 ccc:  var31,  var32 }  @popCompilationContext(atisemAn_id_147, "cyan.lang", "Function<ffm.FFM_Test><String,Int,Char><Int,Char><Char,String,String>") 
+;
+         @markDeletedCode(1)   @pushCompilationContextStatement(atisemAn_id_148, "macro(assert)", ffm, "C:\Dropbox\Cyan\cyanTests\master\ffm\Test.cyan", 63) 
+         if !(sa3b2c2_carol eval: carol
+    eval: "0", 1, '2'
+    eval: 3, '4'
+    eval: '5', "6" == "Carolina 70123456") {
+                  "Assert failed in line 63 of prototype 'ffm.Test'" println;
+                  "Assert expression: 'sa3b2c2_carol eval: carol\n    eval: \"0\", 1, \'2\'\n    eval: 3, \'4\'\n    eval: \'5\', \"6\" == \"Carolina 70123456\"'" println;
+                  };
+ @popCompilationContext(atisemAn_id_148) 
+ 
+         @markDeletedCode(1)   @pushCompilationContextStatement(atisemAn_id_149, "macro(assert)", ffm, "C:\Dropbox\Cyan\cyanTests\master\ffm\Test.cyan", 65) 
+         if !(sa3b2c2_carol eval: livia
+    eval: "0", 1, '2'
+    eval: 3, '4'
+    eval: '5', "6" == "Livia 100123456") {
+                  "Assert failed in line 65 of prototype 'ffm.Test'" println;
+                  "Assert expression: 'sa3b2c2_carol eval: livia\n    eval: \"0\", 1, \'2\'\n    eval: 3, \'4\'\n    eval: \'5\', \"6\" == \"Livia 100123456\"'" println;
+                  };
+ @popCompilationContext(atisemAn_id_149) 
+ 
+        let sa3b2c2_livia =   @pushCompilationContext(atisemAn_id_150, "changeFunctionForMethod", "the project file ", "C:\Dropbox\Cyan\lib\cyan\lang\allInterfaces.iyan", 82)  { (: eval: ffm.FFM_Test var33 eval: cyan.lang.String var34, cyan.lang.Int var35, cyan.lang.Char var36 eval: cyan.lang.Int var37, cyan.lang.Char var38 eval: cyan.lang.Char var39, cyan.lang.String var40 :) ^var33 aaa:  var34,  var35,  var36 bbb:  var37,  var38 ccc:  var39,  var40 }  @popCompilationContext(atisemAn_id_150, "cyan.lang", "Function<ffm.FFM_Test><String,Int,Char><Int,Char><Char,String,String>") 
+;
+         @markDeletedCode(1)   @pushCompilationContextStatement(atisemAn_id_151, "macro(assert)", ffm, "C:\Dropbox\Cyan\cyanTests\master\ffm\Test.cyan", 68) 
+         if !(sa3b2c2_livia eval: livia
+    eval: "0", 1, '2'
+    eval: 3, '4'
+    eval: '5', "6" == "Livia 100123456") {
+                  "Assert failed in line 68 of prototype 'ffm.Test'" println;
+                  "Assert expression: 'sa3b2c2_livia eval: livia\n    eval: \"0\", 1, \'2\'\n    eval: 3, \'4\'\n    eval: \'5\', \"6\" == \"Livia 100123456\"'" println;
+                  };
+ @popCompilationContext(atisemAn_id_151) 
+ 
+         @markDeletedCode(1)   @pushCompilationContextStatement(atisemAn_id_152, "macro(assert)", ffm, "C:\Dropbox\Cyan\cyanTests\master\ffm\Test.cyan", 70) 
+         if !(sa3b2c2_livia eval: carol
+    eval: "0", 1, '2'
+    eval: 3, '4'
+    eval: '5', "6" == "Carolina 70123456") {
+                  "Assert failed in line 70 of prototype 'ffm.Test'" println;
+                  "Assert expression: 'sa3b2c2_livia eval: carol\n    eval: \"0\", 1, \'2\'\n    eval: 3, \'4\'\n    eval: \'5\', \"6\" == \"Carolina 70123456\"'" println;
+                  };
+ @popCompilationContext(atisemAn_id_152) 
+ 
+               
+    
+        let a0b0c0_carol =   @pushCompilationContext(atisemAn_id_154, "changeFunctionForMethod", "the project file ", "C:\Dropbox\Cyan\lib\cyan\lang\allInterfaces.iyan", 80)  { (: eval:  eval:  eval:  :) ^carol aaa:  bbb:  ccc:  }  @popCompilationContext(atisemAn_id_154, "cyan.lang", "Function<none><none><none,String>") 
+;
+        let a0b0c0_livia =   @pushCompilationContext(atisemAn_id_155, "changeFunctionForMethod", "the project file ", "C:\Dropbox\Cyan\lib\cyan\lang\allInterfaces.iyan", 80)  { (: eval:  eval:  eval:  :) ^livia aaa:  bbb:  ccc:  }  @popCompilationContext(atisemAn_id_155, "cyan.lang", "Function<none><none><none,String>") 
+;
+        
+          @pushCompilationContextStatement(atisemAn_id_156, "macro(assert)", ffm, "C:\Dropbox\Cyan\cyanTests\master\ffm\Test.cyan", 77) 
+         if !(a0b0c0_carol eval: 
+    eval: 
+    eval:  == "Carolina 7aaa:bbb:ccc:") {
+                  "Assert failed in line 77 of prototype 'ffm.Test'" println;
+                  "Assert expression: 'a0b0c0_carol eval: \n    eval: \n    eval:  == \"Carolina 7aaa:bbb:ccc:\"'" println;
+                  };
+ @popCompilationContext(atisemAn_id_156) 
+ 
+          @pushCompilationContextStatement(atisemAn_id_157, "macro(assert)", ffm, "C:\Dropbox\Cyan\cyanTests\master\ffm\Test.cyan", 78) 
+         if !(a0b0c0_livia eval: 
+    eval: 
+    eval:  == "Livia 10aaa:bbb:ccc:") {
+                  "Assert failed in line 78 of prototype 'ffm.Test'" println;
+                  "Assert expression: 'a0b0c0_livia eval: \n    eval: \n    eval:  == \"Livia 10aaa:bbb:ccc:\"'" println;
+                  };
+ @popCompilationContext(atisemAn_id_157) 
+ 
+        
+
+
+        // aaa: bbb: String s, Char ch ccc:
+        let a0b2c0_carol =   @pushCompilationContext(atisemAn_id_159, "changeFunctionForMethod", "the project file ", "C:\Dropbox\Cyan\lib\cyan\lang\allInterfaces.iyan", 80)  { (: eval:  eval: cyan.lang.String var44, cyan.lang.Char var45 eval:  :) ^carol aaa:  bbb:  var44,  var45 ccc:  }  @popCompilationContext(atisemAn_id_159, "cyan.lang", "Function<none><String,Char><none,String>") 
+;
+        let a0b2c0_livia =   @pushCompilationContext(atisemAn_id_160, "changeFunctionForMethod", "the project file ", "C:\Dropbox\Cyan\lib\cyan\lang\allInterfaces.iyan", 80)  { (: eval:  eval: cyan.lang.String var47, cyan.lang.Char var48 eval:  :) ^livia aaa:  bbb:  var47,  var48 ccc:  }  @popCompilationContext(atisemAn_id_160, "cyan.lang", "Function<none><String,Char><none,String>") 
+;
+
+          @pushCompilationContextStatement(atisemAn_id_161, "macro(assert)", ffm, "C:\Dropbox\Cyan\cyanTests\master\ffm\Test.cyan", 86) 
+         if !(a0b2c0_carol eval: 
+    eval: "xy", '0'
+    eval:  == "Carolina 7xy0") {
+                  "Assert failed in line 86 of prototype 'ffm.Test'" println;
+                  "Assert expression: 'a0b2c0_carol eval: \n    eval: \"xy\", \'0\'\n    eval:  == \"Carolina 7xy0\"'" println;
+                  };
+ @popCompilationContext(atisemAn_id_161) 
+ 
+          @pushCompilationContextStatement(atisemAn_id_162, "macro(assert)", ffm, "C:\Dropbox\Cyan\cyanTests\master\ffm\Test.cyan", 87) 
+         if !(a0b2c0_livia eval: 
+    eval: "ttt", 'u'
+    eval:  == "Livia 10tttu") {
+                  "Assert failed in line 87 of prototype 'ffm.Test'" println;
+                  "Assert expression: 'a0b2c0_livia eval: \n    eval: \"ttt\", \'u\'\n    eval:  == \"Livia 10tttu\"'" println;
+                  };
+ @popCompilationContext(atisemAn_id_162) 
+ 
+
+        let sa0b2c0_carol =   @pushCompilationContext(atisemAn_id_164, "changeFunctionForMethod", "the project file ", "C:\Dropbox\Cyan\lib\cyan\lang\allInterfaces.iyan", 82)  { (: eval: ffm.FFM_Test var49 eval:  eval: cyan.lang.String var50, cyan.lang.Char var51 eval:  :) ^var49 aaa:  bbb:  var50,  var51 ccc:  }  @popCompilationContext(atisemAn_id_164, "cyan.lang", "Function<ffm.FFM_Test><none><String,Char><none,String>") 
+;
+        let sa0b2c0_livia =   @pushCompilationContext(atisemAn_id_165, "changeFunctionForMethod", "the project file ", "C:\Dropbox\Cyan\lib\cyan\lang\allInterfaces.iyan", 82)  { (: eval: ffm.FFM_Test var52 eval:  eval: cyan.lang.String var53, cyan.lang.Char var54 eval:  :) ^var52 aaa:  bbb:  var53,  var54 ccc:  }  @popCompilationContext(atisemAn_id_165, "cyan.lang", "Function<ffm.FFM_Test><none><String,Char><none,String>") 
+;
+
+          @pushCompilationContextStatement(atisemAn_id_166, "macro(assert)", ffm, "C:\Dropbox\Cyan\cyanTests\master\ffm\Test.cyan", 92) 
+         if !(sa0b2c0_carol eval: carol
+    eval: 
+    eval: "xy", '0'
+    eval:  == "Carolina 7xy0") {
+                  "Assert failed in line 92 of prototype 'ffm.Test'" println;
+                  "Assert expression: 'sa0b2c0_carol eval: carol\n    eval: \n    eval: \"xy\", \'0\'\n    eval:  == \"Carolina 7xy0\"'" println;
+                  };
+ @popCompilationContext(atisemAn_id_166) 
+ 
+          @pushCompilationContextStatement(atisemAn_id_167, "macro(assert)", ffm, "C:\Dropbox\Cyan\cyanTests\master\ffm\Test.cyan", 93) 
+         if !(sa0b2c0_livia eval: carol
+    eval: 
+    eval: "ttt", 'u'
+    eval:  == "Carolina 7tttu") {
+                  "Assert failed in line 93 of prototype 'ffm.Test'" println;
+                  "Assert expression: 'sa0b2c0_livia eval: carol\n    eval: \n    eval: \"ttt\", \'u\'\n    eval:  == \"Carolina 7tttu\"'" println;
+                  };
+ @popCompilationContext(atisemAn_id_167) 
+ 
+          @pushCompilationContextStatement(atisemAn_id_168, "macro(assert)", ffm, "C:\Dropbox\Cyan\cyanTests\master\ffm\Test.cyan", 94) 
+         if !(sa0b2c0_carol eval: livia
+    eval: 
+    eval: "xy", '0'
+    eval:  == "Livia 10xy0") {
+                  "Assert failed in line 94 of prototype 'ffm.Test'" println;
+                  "Assert expression: 'sa0b2c0_carol eval: livia\n    eval: \n    eval: \"xy\", \'0\'\n    eval:  == \"Livia 10xy0\"'" println;
+                  };
+ @popCompilationContext(atisemAn_id_168) 
+ 
+          @pushCompilationContextStatement(atisemAn_id_169, "macro(assert)", ffm, "C:\Dropbox\Cyan\cyanTests\master\ffm\Test.cyan", 95) 
+         if !(sa0b2c0_livia eval: livia
+    eval: 
+    eval: "ttt", 'u'
+    eval:  == "Livia 10tttu") {
+                  "Assert failed in line 95 of prototype 'ffm.Test'" println;
+                  "Assert expression: 'sa0b2c0_livia eval: livia\n    eval: \n    eval: \"ttt\", \'u\'\n    eval:  == \"Livia 10tttu\"'" println;
+                  };
+ @popCompilationContext(atisemAn_id_169) 
+ 
+ 
+        // aaa: String s, Int n   bbb:  ccc: Char ch -> String =
+
+        /*
+           func aaa: bbb: String s, Int n -> String = 
+               asString ++ "aaa:bbb:" ++ s ++ n;
+           
+           func aaa: String s, Int n -> String = 
+               asString ++ "aaa:" ++ s ++ n;
+           
+        
+        */
+        let a0b2_carol =   @pushCompilationContext(atisemAn_id_171, "changeFunctionForMethod", "the project file ", "C:\Dropbox\Cyan\lib\cyan\lang\allInterfaces.iyan", 80)  { (: eval:  eval: cyan.lang.String var56, cyan.lang.Int var57 :) ^carol aaa:  bbb:  var56,  var57 }  @popCompilationContext(atisemAn_id_171, "cyan.lang", "Function<none><String,Int,String>") 
+;
+        let a0b2_livia =   @pushCompilationContext(atisemAn_id_172, "changeFunctionForMethod", "the project file ", "C:\Dropbox\Cyan\lib\cyan\lang\allInterfaces.iyan", 80)  { (: eval:  eval: cyan.lang.String var59, cyan.lang.Int var60 :) ^livia aaa:  bbb:  var59,  var60 }  @popCompilationContext(atisemAn_id_172, "cyan.lang", "Function<none><String,Int,String>") 
+;
+     
+          @pushCompilationContextStatement(atisemAn_id_173, "macro(assert)", ffm, "C:\Dropbox\Cyan\cyanTests\master\ffm\Test.cyan", 111) 
+         if !(a0b2_carol eval: 
+    eval: "0", 1 == "Carolina 7aaa:bbb:01") {
+                  "Assert failed in line 111 of prototype 'ffm.Test'" println;
+                  "Assert expression: 'a0b2_carol eval: \n    eval: \"0\", 1 == \"Carolina 7aaa:bbb:01\"'" println;
+                  };
+ @popCompilationContext(atisemAn_id_173) 
+    
+          @pushCompilationContextStatement(atisemAn_id_174, "macro(assert)", ffm, "C:\Dropbox\Cyan\cyanTests\master\ffm\Test.cyan", 112) 
+         if !(a0b2_livia eval: 
+    eval: "0", 1 == "Livia 10aaa:bbb:01") {
+                  "Assert failed in line 112 of prototype 'ffm.Test'" println;
+                  "Assert expression: 'a0b2_livia eval: \n    eval: \"0\", 1 == \"Livia 10aaa:bbb:01\"'" println;
+                  };
+ @popCompilationContext(atisemAn_id_174) 
+    
+        
+        let sa0b2_carol =   @pushCompilationContext(atisemAn_id_176, "changeFunctionForMethod", "the project file ", "C:\Dropbox\Cyan\lib\cyan\lang\allInterfaces.iyan", 82)  { (: eval: ffm.FFM_Test var61 eval:  eval: cyan.lang.String var62, cyan.lang.Int var63 :) ^var61 aaa:  bbb:  var62,  var63 }  @popCompilationContext(atisemAn_id_176, "cyan.lang", "Function<ffm.FFM_Test><none><String,Int,String>") 
+;
+        let sa0b2_livia =   @pushCompilationContext(atisemAn_id_177, "changeFunctionForMethod", "the project file ", "C:\Dropbox\Cyan\lib\cyan\lang\allInterfaces.iyan", 82)  { (: eval: ffm.FFM_Test var64 eval:  eval: cyan.lang.String var65, cyan.lang.Int var66 :) ^var64 aaa:  bbb:  var65,  var66 }  @popCompilationContext(atisemAn_id_177, "cyan.lang", "Function<ffm.FFM_Test><none><String,Int,String>") 
+;
+     
+          @pushCompilationContextStatement(atisemAn_id_178, "macro(assert)", ffm, "C:\Dropbox\Cyan\cyanTests\master\ffm\Test.cyan", 117) 
+         if !(sa0b2_carol eval: carol
+    eval: 
+    eval: "0", 1 == "Carolina 7aaa:bbb:01") {
+                  "Assert failed in line 117 of prototype 'ffm.Test'" println;
+                  "Assert expression: 'sa0b2_carol eval: carol\n    eval: \n    eval: \"0\", 1 == \"Carolina 7aaa:bbb:01\"'" println;
+                  };
+ @popCompilationContext(atisemAn_id_178) 
+    
+          @pushCompilationContextStatement(atisemAn_id_179, "macro(assert)", ffm, "C:\Dropbox\Cyan\cyanTests\master\ffm\Test.cyan", 118) 
+         if !(sa0b2_carol eval: livia
+    eval: 
+    eval: "0", 1 == "Livia 10aaa:bbb:01") {
+                  "Assert failed in line 118 of prototype 'ffm.Test'" println;
+                  "Assert expression: 'sa0b2_carol eval: livia\n    eval: \n    eval: \"0\", 1 == \"Livia 10aaa:bbb:01\"'" println;
+                  };
+ @popCompilationContext(atisemAn_id_179) 
+    
+          @pushCompilationContextStatement(atisemAn_id_180, "macro(assert)", ffm, "C:\Dropbox\Cyan\cyanTests\master\ffm\Test.cyan", 119) 
+         if !(sa0b2_livia eval: carol
+    eval: 
+    eval: "0", 1 == "Carolina 7aaa:bbb:01") {
+                  "Assert failed in line 119 of prototype 'ffm.Test'" println;
+                  "Assert expression: 'sa0b2_livia eval: carol\n    eval: \n    eval: \"0\", 1 == \"Carolina 7aaa:bbb:01\"'" println;
+                  };
+ @popCompilationContext(atisemAn_id_180) 
+    
+          @pushCompilationContextStatement(atisemAn_id_181, "macro(assert)", ffm, "C:\Dropbox\Cyan\cyanTests\master\ffm\Test.cyan", 120) 
+         if !(sa0b2_livia eval: livia
+    eval: 
+    eval: "0", 1 == "Livia 10aaa:bbb:01") {
+                  "Assert failed in line 120 of prototype 'ffm.Test'" println;
+                  "Assert expression: 'sa0b2_livia eval: livia\n    eval: \n    eval: \"0\", 1 == \"Livia 10aaa:bbb:01\"'" println;
+                  };
+ @popCompilationContext(atisemAn_id_181) 
+    
+
+        let a2_carol =   @pushCompilationContext(atisemAn_id_184, "changeFunctionForMethod", "the project file ", "C:\Dropbox\Cyan\lib\cyan\lang\allInterfaces.iyan", 80)  { (: eval: cyan.lang.String var68, cyan.lang.Int var69 :) ^carol aaa:  var68,  var69 }  @popCompilationContext(atisemAn_id_184, "cyan.lang", "Function<String,Int,String>") 
+;
+        let a2_livia =   @pushCompilationContext(atisemAn_id_185, "changeFunctionForMethod", "the project file ", "C:\Dropbox\Cyan\lib\cyan\lang\allInterfaces.iyan", 80)  { (: eval: cyan.lang.String var71, cyan.lang.Int var72 :) ^livia aaa:  var71,  var72 }  @popCompilationContext(atisemAn_id_185, "cyan.lang", "Function<String,Int,String>") 
+;
+     
+          @pushCompilationContextStatement(atisemAn_id_186, "macro(assert)", ffm, "C:\Dropbox\Cyan\cyanTests\master\ffm\Test.cyan", 125) 
+         if !(a2_carol eval: "0", 1 == "Carolina 7aaa:01") {
+                  "Assert failed in line 125 of prototype 'ffm.Test'" println;
+                  "Assert expression: 'a2_carol eval: \"0\", 1 == \"Carolina 7aaa:01\"'" println;
+                  };
+ @popCompilationContext(atisemAn_id_186) 
+    
+          @pushCompilationContextStatement(atisemAn_id_187, "macro(assert)", ffm, "C:\Dropbox\Cyan\cyanTests\master\ffm\Test.cyan", 126) 
+         if !(a2_livia eval: "0", 1 == "Livia 10aaa:01") {
+                  "Assert failed in line 126 of prototype 'ffm.Test'" println;
+                  "Assert expression: 'a2_livia eval: \"0\", 1 == \"Livia 10aaa:01\"'" println;
+                  };
+ @popCompilationContext(atisemAn_id_187) 
+    
+        
+        let sa2_carol =   @pushCompilationContext(atisemAn_id_189, "changeFunctionForMethod", "the project file ", "C:\Dropbox\Cyan\lib\cyan\lang\allInterfaces.iyan", 82)  { (: eval: ffm.FFM_Test var73 eval: cyan.lang.String var74, cyan.lang.Int var75 :) ^var73 aaa:  var74,  var75 }  @popCompilationContext(atisemAn_id_189, "cyan.lang", "Function<ffm.FFM_Test><String,Int,String>") 
+;
+        let sa2_livia =   @pushCompilationContext(atisemAn_id_190, "changeFunctionForMethod", "the project file ", "C:\Dropbox\Cyan\lib\cyan\lang\allInterfaces.iyan", 82)  { (: eval: ffm.FFM_Test var76 eval: cyan.lang.String var77, cyan.lang.Int var78 :) ^var76 aaa:  var77,  var78 }  @popCompilationContext(atisemAn_id_190, "cyan.lang", "Function<ffm.FFM_Test><String,Int,String>") 
+;
+     
+          @pushCompilationContextStatement(atisemAn_id_191, "macro(assert)", ffm, "C:\Dropbox\Cyan\cyanTests\master\ffm\Test.cyan", 131) 
+         if !(sa2_carol eval: carol
+    eval: "0", 1 == "Carolina 7aaa:01") {
+                  "Assert failed in line 131 of prototype 'ffm.Test'" println;
+                  "Assert expression: 'sa2_carol eval: carol\n    eval: \"0\", 1 == \"Carolina 7aaa:01\"'" println;
+                  };
+ @popCompilationContext(atisemAn_id_191) 
+    
+          @pushCompilationContextStatement(atisemAn_id_192, "macro(assert)", ffm, "C:\Dropbox\Cyan\cyanTests\master\ffm\Test.cyan", 132) 
+         if !(sa2_carol eval: livia
+    eval: "0", 1 == "Livia 10aaa:01") {
+                  "Assert failed in line 132 of prototype 'ffm.Test'" println;
+                  "Assert expression: 'sa2_carol eval: livia\n    eval: \"0\", 1 == \"Livia 10aaa:01\"'" println;
+                  };
+ @popCompilationContext(atisemAn_id_192) 
+    
+          @pushCompilationContextStatement(atisemAn_id_193, "macro(assert)", ffm, "C:\Dropbox\Cyan\cyanTests\master\ffm\Test.cyan", 133) 
+         if !(sa2_livia eval: carol
+    eval: "0", 1 == "Carolina 7aaa:01") {
+                  "Assert failed in line 133 of prototype 'ffm.Test'" println;
+                  "Assert expression: 'sa2_livia eval: carol\n    eval: \"0\", 1 == \"Carolina 7aaa:01\"'" println;
+                  };
+ @popCompilationContext(atisemAn_id_193) 
+    
+          @pushCompilationContextStatement(atisemAn_id_194, "macro(assert)", ffm, "C:\Dropbox\Cyan\cyanTests\master\ffm\Test.cyan", 134) 
+         if !(sa2_livia eval: livia
+    eval: "0", 1 == "Livia 10aaa:01") {
+                  "Assert failed in line 134 of prototype 'ffm.Test'" println;
+                  "Assert expression: 'sa2_livia eval: livia\n    eval: \"0\", 1 == \"Livia 10aaa:01\"'" println;
+                  };
+ @popCompilationContext(atisemAn_id_194) 
+    
+
+
+        //     func aaa: -> String = asString ++ "aaa:";
+
+        let a0_carol =   @pushCompilationContext(atisemAn_id_196, "changeFunctionForMethod", "the project file ", "C:\Dropbox\Cyan\lib\cyan\lang\allInterfaces.iyan", 80)  { (: eval: cyan.lang.Nil var80 :) ^carol aaa0:  var80 }  @popCompilationContext(atisemAn_id_196, "cyan.lang", "Function<Nil,String>") 
+;
+        let a0_livia =   @pushCompilationContext(atisemAn_id_197, "changeFunctionForMethod", "the project file ", "C:\Dropbox\Cyan\lib\cyan\lang\allInterfaces.iyan", 80)  { (: eval: cyan.lang.Nil var82 :) ^livia aaa0:  var82 }  @popCompilationContext(atisemAn_id_197, "cyan.lang", "Function<Nil,String>") 
+;
+     
+          @pushCompilationContextStatement(atisemAn_id_198, "macro(assert)", ffm, "C:\Dropbox\Cyan\cyanTests\master\ffm\Test.cyan", 142) 
+         if !(a0_carol eval: Nil == "Carolina 7aaa:") {
+                  "Assert failed in line 142 of prototype 'ffm.Test'" println;
+                  "Assert expression: 'a0_carol eval: Nil == \"Carolina 7aaa:\"'" println;
+                  };
+ @popCompilationContext(atisemAn_id_198) 
+    
+          @pushCompilationContextStatement(atisemAn_id_199, "macro(assert)", ffm, "C:\Dropbox\Cyan\cyanTests\master\ffm\Test.cyan", 143) 
+         if !(a0_livia eval: Nil == "Livia 10aaa:") {
+                  "Assert failed in line 143 of prototype 'ffm.Test'" println;
+                  "Assert expression: 'a0_livia eval: Nil == \"Livia 10aaa:\"'" println;
+                  };
+ @popCompilationContext(atisemAn_id_199) 
+    
+        
+        let sa0_carol =   @pushCompilationContext(atisemAn_id_201, "changeFunctionForMethod", "the project file ", "C:\Dropbox\Cyan\lib\cyan\lang\allInterfaces.iyan", 82)  { (: eval: ffm.FFM_Test var83 eval: cyan.lang.Nil var84 :) ^var83 aaa0:  var84 }  @popCompilationContext(atisemAn_id_201, "cyan.lang", "Function<ffm.FFM_Test><Nil,String>") 
+;
+        let sa0_livia =   @pushCompilationContext(atisemAn_id_202, "changeFunctionForMethod", "the project file ", "C:\Dropbox\Cyan\lib\cyan\lang\allInterfaces.iyan", 82)  { (: eval: ffm.FFM_Test var85 eval: cyan.lang.Nil var86 :) ^var85 aaa0:  var86 }  @popCompilationContext(atisemAn_id_202, "cyan.lang", "Function<ffm.FFM_Test><Nil,String>") 
+;
+     
+          @pushCompilationContextStatement(atisemAn_id_203, "macro(assert)", ffm, "C:\Dropbox\Cyan\cyanTests\master\ffm\Test.cyan", 148) 
+         if !(sa0_carol eval: carol
+    eval: Nil == "Carolina 7aaa:") {
+                  "Assert failed in line 148 of prototype 'ffm.Test'" println;
+                  "Assert expression: 'sa0_carol eval: carol\n    eval: Nil == \"Carolina 7aaa:\"'" println;
+                  };
+ @popCompilationContext(atisemAn_id_203) 
+    
+          @pushCompilationContextStatement(atisemAn_id_204, "macro(assert)", ffm, "C:\Dropbox\Cyan\cyanTests\master\ffm\Test.cyan", 149) 
+         if !(sa0_carol eval: livia
+    eval: Nil == "Livia 10aaa:") {
+                  "Assert failed in line 149 of prototype 'ffm.Test'" println;
+                  "Assert expression: 'sa0_carol eval: livia\n    eval: Nil == \"Livia 10aaa:\"'" println;
+                  };
+ @popCompilationContext(atisemAn_id_204) 
+    
+          @pushCompilationContextStatement(atisemAn_id_205, "macro(assert)", ffm, "C:\Dropbox\Cyan\cyanTests\master\ffm\Test.cyan", 150) 
+         if !(sa0_livia eval: carol
+    eval: Nil == "Carolina 7aaa:") {
+                  "Assert failed in line 150 of prototype 'ffm.Test'" println;
+                  "Assert expression: 'sa0_livia eval: carol\n    eval: Nil == \"Carolina 7aaa:\"'" println;
+                  };
+ @popCompilationContext(atisemAn_id_205) 
+    
+          @pushCompilationContextStatement(atisemAn_id_206, "macro(assert)", ffm, "C:\Dropbox\Cyan\cyanTests\master\ffm\Test.cyan", 151) 
+         if !(sa0_livia eval: livia
+    eval: Nil == "Livia 10aaa:") {
+                  "Assert failed in line 151 of prototype 'ffm.Test'" println;
+                  "Assert expression: 'sa0_livia eval: livia\n    eval: Nil == \"Livia 10aaa:\"'" println;
+                  };
+ @popCompilationContext(atisemAn_id_206) 
+    
+
+
+
+        let plus1_carol =   @pushCompilationContext(atisemAn_id_208, "changeFunctionForMethod", "the project file ", "C:\Dropbox\Cyan\lib\cyan\lang\allInterfaces.iyan", 82)  { (: eval: ffm.FFM_Test var87 eval: cyan.lang.Int var88 :) ^var87 mult:  var88 }  @popCompilationContext(atisemAn_id_208, "cyan.lang", "Function<ffm.FFM_Test><Int,Char>") 
+;
+        let plus1_livia =   @pushCompilationContext(atisemAn_id_209, "changeFunctionForMethod", "the project file ", "C:\Dropbox\Cyan\lib\cyan\lang\allInterfaces.iyan", 82)  { (: eval: ffm.FFM_Test var89 eval: cyan.lang.Int var90 :) ^var89 mult:  var90 }  @popCompilationContext(atisemAn_id_209, "cyan.lang", "Function<ffm.FFM_Test><Int,Char>") 
+;
+        let minus_carol =   @pushCompilationContext(atisemAn_id_211, "changeFunctionForMethod", "the project file ", "C:\Dropbox\Cyan\lib\cyan\lang\allInterfaces.iyan", 82)  { (: ffm.FFM_Test var91 :) ^var91 unMinus }  @popCompilationContext(atisemAn_id_211, "cyan.lang", "Function<ffm.FFM_Test,String>") 
+;
+        let minus_livia =   @pushCompilationContext(atisemAn_id_212, "changeFunctionForMethod", "the project file ", "C:\Dropbox\Cyan\lib\cyan\lang\allInterfaces.iyan", 82)  { (: ffm.FFM_Test var92 :) ^var92 unMinus }  @popCompilationContext(atisemAn_id_212, "cyan.lang", "Function<ffm.FFM_Test,String>") 
+;
+
+
+
+          @pushCompilationContextStatement(atisemAn_id_215, "macro(assert)", ffm, "C:\Dropbox\Cyan\cyanTests\master\ffm\Test.cyan", 162) 
+         if !(( { (: eval: cyan.lang.Int var94 :) ^carol mult:  var94 } ) eval: 41 == '0') {
+                  "Assert failed in line 162 of prototype 'ffm.Test'" println;
+                  "Assert expression: '( { (: eval: cyan.lang.Int var94 :) ^carol mult:  var94 } ) eval: 41 == \'0\''" println;
+                  };
+ @popCompilationContext(atisemAn_id_215) 
+ 
+          @pushCompilationContextStatement(atisemAn_id_217, "macro(assert)", ffm, "C:\Dropbox\Cyan\cyanTests\master\ffm\Test.cyan", 163) 
+         if !(( { (: eval: cyan.lang.Int var96 :) ^livia mult:  var96 } ) eval: 90 == 'd') {
+                  "Assert failed in line 163 of prototype 'ffm.Test'" println;
+                  "Assert expression: '( { (: eval: cyan.lang.Int var96 :) ^livia mult:  var96 } ) eval: 90 == \'d\''" println;
+                  };
+ @popCompilationContext(atisemAn_id_217) 
+ 
+          @pushCompilationContextStatement(atisemAn_id_219, "macro(assert)", ffm, "C:\Dropbox\Cyan\cyanTests\master\ffm\Test.cyan", 164) 
+         if !(( {  ^carol unMinus } ) eval == "Carolina 7sss") {
+                  "Assert failed in line 164 of prototype 'ffm.Test'" println;
+                  "Assert expression: '( {  ^carol unMinus } ) eval == \"Carolina 7sss\"'" println;
+                  };
+ @popCompilationContext(atisemAn_id_219) 
+ 
+          @pushCompilationContextStatement(atisemAn_id_221, "macro(assert)", ffm, "C:\Dropbox\Cyan\cyanTests\master\ffm\Test.cyan", 165) 
+         if !(( {  ^livia unMinus } ) eval == "Livia 10sss") {
+                  "Assert failed in line 165 of prototype 'ffm.Test'" println;
+                  "Assert expression: '( {  ^livia unMinus } ) eval == \"Livia 10sss\"'" println;
+                  };
+ @popCompilationContext(atisemAn_id_221) 
+ 
+        
+
+          @pushCompilationContextStatement(atisemAn_id_222, "macro(assert)", ffm, "C:\Dropbox\Cyan\cyanTests\master\ffm\Test.cyan", 168) 
+         if !(plus1_carol eval: carol
+    eval: 42 == '1') {
+                  "Assert failed in line 168 of prototype 'ffm.Test'" println;
+                  "Assert expression: 'plus1_carol eval: carol\n    eval: 42 == \'1\''" println;
+                  };
+ @popCompilationContext(atisemAn_id_222) 
+ 
+          @pushCompilationContextStatement(atisemAn_id_223, "macro(assert)", ffm, "C:\Dropbox\Cyan\cyanTests\master\ffm\Test.cyan", 169) 
+         if !(plus1_carol eval: livia
+    eval: 40 == '2') {
+                  "Assert failed in line 169 of prototype 'ffm.Test'" println;
+                  "Assert expression: 'plus1_carol eval: livia\n    eval: 40 == \'2\''" println;
+                  };
+ @popCompilationContext(atisemAn_id_223) 
+ 
+          @pushCompilationContextStatement(atisemAn_id_224, "macro(assert)", ffm, "C:\Dropbox\Cyan\cyanTests\master\ffm\Test.cyan", 170) 
+         if !(plus1_livia eval: carol
+    eval: 42 == '1') {
+                  "Assert failed in line 170 of prototype 'ffm.Test'" println;
+                  "Assert expression: 'plus1_livia eval: carol\n    eval: 42 == \'1\''" println;
+                  };
+ @popCompilationContext(atisemAn_id_224) 
+ 
+          @pushCompilationContextStatement(atisemAn_id_225, "macro(assert)", ffm, "C:\Dropbox\Cyan\cyanTests\master\ffm\Test.cyan", 171) 
+         if !(plus1_livia eval: livia
+    eval: 40 == '2') {
+                  "Assert failed in line 171 of prototype 'ffm.Test'" println;
+                  "Assert expression: 'plus1_livia eval: livia\n    eval: 40 == \'2\''" println;
+                  };
+ @popCompilationContext(atisemAn_id_225) 
+ 
+
+          @pushCompilationContextStatement(atisemAn_id_226, "macro(assert)", ffm, "C:\Dropbox\Cyan\cyanTests\master\ffm\Test.cyan", 173) 
+         if !(minus_carol eval: carol == "Carolina 7sss") {
+                  "Assert failed in line 173 of prototype 'ffm.Test'" println;
+                  "Assert expression: 'minus_carol eval: carol == \"Carolina 7sss\"'" println;
+                  };
+ @popCompilationContext(atisemAn_id_226) 
+ 
+          @pushCompilationContextStatement(atisemAn_id_227, "macro(assert)", ffm, "C:\Dropbox\Cyan\cyanTests\master\ffm\Test.cyan", 174) 
+         if !(minus_carol eval: livia == "Livia 10sss") {
+                  "Assert failed in line 174 of prototype 'ffm.Test'" println;
+                  "Assert expression: 'minus_carol eval: livia == \"Livia 10sss\"'" println;
+                  };
+ @popCompilationContext(atisemAn_id_227) 
+ 
+          @pushCompilationContextStatement(atisemAn_id_228, "macro(assert)", ffm, "C:\Dropbox\Cyan\cyanTests\master\ffm\Test.cyan", 175) 
+         if !(minus_livia eval: carol == "Carolina 7sss") {
+                  "Assert failed in line 175 of prototype 'ffm.Test'" println;
+                  "Assert expression: 'minus_livia eval: carol == \"Carolina 7sss\"'" println;
+                  };
+ @popCompilationContext(atisemAn_id_228) 
+ 
+          @pushCompilationContextStatement(atisemAn_id_229, "macro(assert)", ffm, "C:\Dropbox\Cyan\cyanTests\master\ffm\Test.cyan", 176) 
+         if !(minus_livia eval: livia == "Livia 10sss") {
+                  "Assert failed in line 176 of prototype 'ffm.Test'" println;
+                  "Assert expression: 'minus_livia eval: livia == \"Livia 10sss\"'" println;
+                  };
+ @popCompilationContext(atisemAn_id_229) 
+ 
+        
+        
+        let ca = FFM_OpTest(2B);
+        let li = FFM_OpTest(5B);
+        
+          @pushCompilationContextStatement(atisemAn_id_232, "macro(assert)", ffm, "C:\Dropbox\Cyan\cyanTests\master\ffm\Test.cyan", 182) 
+         if !(( {  (: cyan.lang.Byte var97 :) ^ca  * var97 } ) eval: 46B == '0') {
+                  "Assert failed in line 182 of prototype 'ffm.Test'" println;
+                  "Assert expression: '( {  (: cyan.lang.Byte var97 :) ^ca  * var97 } ) eval: 46B == \'0\''" println;
+                  };
+ @popCompilationContext(atisemAn_id_232) 
+ 
+          @pushCompilationContextStatement(atisemAn_id_234, "macro(assert)", ffm, "C:\Dropbox\Cyan\cyanTests\master\ffm\Test.cyan", 183) 
+         if !(( {  (: cyan.lang.Byte var98 :) ^li  * var98 } ) eval: 92B == 'a') {
+                  "Assert failed in line 183 of prototype 'ffm.Test'" println;
+                  "Assert expression: '( {  (: cyan.lang.Byte var98 :) ^li  * var98 } ) eval: 92B == \'a\''" println;
+                  };
+ @popCompilationContext(atisemAn_id_234) 
+ 
+          @pushCompilationContextStatement(atisemAn_id_236, "macro(assert)", ffm, "C:\Dropbox\Cyan\cyanTests\master\ffm\Test.cyan", 184) 
+         if !(( {  ^ - ca } ) eval == "2sss") {
+                  "Assert failed in line 184 of prototype 'ffm.Test'" println;
+                  "Assert expression: '( {  ^ - ca } ) eval == \"2sss\"'" println;
+                  };
+ @popCompilationContext(atisemAn_id_236) 
+ 
+          @pushCompilationContextStatement(atisemAn_id_238, "macro(assert)", ffm, "C:\Dropbox\Cyan\cyanTests\master\ffm\Test.cyan", 185) 
+         if !(( {  ^ - li } ) eval == "5sss") {
+                  "Assert failed in line 185 of prototype 'ffm.Test'" println;
+                  "Assert expression: '( {  ^ - li } ) eval == \"5sss\"'" println;
+                  };
+ @popCompilationContext(atisemAn_id_238) 
+ 
+        
+        /*
+
+        let Function<Nil> mRun = Test functionForMethod: "run2";
+        mRun eval;
+        let Function<Array<String>, Nil> mRun1 = Test functionForMethod: "run:1";
+        mRun1 eval: [ "0", "1", "2" ];
+        let Function<String, Int, Char><Int, Char><Char, String, String> mabc = 
+            Test functionForMethod: "aa:3 bb:2 cc:2";
+        (mabc eval: "0", 1, '2' eval: 3, '4' eval: '5', "6") println;
+        let Function<Int, Char> mMult = Test functionForMethod: "*1";
+        (mMult eval: 0) println;
+        let Function<String> mMinus = Test functionForMethod: "-";
+        mMinus eval println;
+
+
+        
+        let t0 = Test();
+        let t1 = Test();
+        let Function<Test, Nil> mRunSelf = Test functionForMethodWithSelf: "run2";
+        mRunSelf eval: t0;
+        "aaa" println;
+        let Function<Test><Array<String>, Nil> mRun1Self = Test functionForMethodWithSelf: "run:1";
+        mRun1Self eval: t1 eval: [ "0", "1", "2" ];
+        "bbb" println;
+        let Function<Test><String, Int, Char><Int, Char><Char, String, String> mabcSelf = 
+            Test functionForMethodWithSelf: "aa:3 bb:2 cc:2";
+        (mabcSelf eval: t0 eval: "0", 1, '2' eval: 3, '4' eval: '5', "6") println;
+        "ccc" println;
+        let Function<Test><Int, Char> mMultSelf = Test functionForMethodWithSelf: "*1";
+        (mMultSelf eval: t1 eval: 0) println;
+        "ddd" println;
+        let Function<Test, String> mMinusSelf = Test functionForMethodWithSelf: "-";
+        (mMinusSelf eval: t1) println;
+        "eee" println;
+        
+        */
+
+    }
+    
+    func run2 { "run" println }
+    func run: Array<String> args { args foreach: Println<String> }
+    func aa: String s0, Int s1, Char s2
+         bb: Int s3, Char s4
+         cc: Char s5, String s6 -> String  {
+         "aa:bb:cc:" println;
+         return ""
+    }
+
+    func * Int n -> Char { "* Int" println; return n asChar }
+    func - -> String { "- unary" println; return "000" }    
+
+ @pushCompilationContextStatement(pp17, pp) 
+
+    // Methods added by the compiler
+    override    func prototype -> Test {
+        @javacode{* return prototype;
+        *}
+    } 
+ @popCompilationContext(pp17) 
+ @pushCompilationContextStatement(new235, new) 
+    // Methods added by the compiler
+
+    override    func clone -> Test {
+        @javacode<<*
+        try {
+            return (_Test ) this.clone(); 
+        } catch (CloneNotSupportedException e) { }
+        return null;
+        *>>    } 
+    func init { } 
+
+    func new -> Test {
+        @javacode<**< 
+            return new _Test();        >**>
+    }
+ @popCompilationContext(new235) 
+ @pushCompilationContext(inner2209, inner) 
+    override
+    func getFeatureListNameDoesNotCollide__ -> Array<Tuple<key, String, value, Any>> {
+        return Array<Tuple<key, String, value, Any>> new;
+    }
+    override
+    func getAnnotListNameDoesNotCollide__ -> Array<Any> {
+        return Array<Any> new;
+    }
+
+    override
+    func getSlotFeatureListNameDoesNotCollide__ -> Array<Tuple<slotName, String, key, String, value, Any>> {
+        let slotFeatureList_name_does_not_collide__ = Array<Tuple<slotName, String, key, String, value, Any>> new;
+        return slotFeatureList_name_does_not_collide__;
+    }
+ @popCompilationContext(inner2209) 
+ @pushCompilationContext(inner2210, inner) 
+        // a prototype for each of the anonymous functions of prototype Test 
+
+    object Fun_0__(Test self__)  extends Function<ffm.FFM_Test><none><none><none, Any>
+
+        func eval: ffm.FFM_Test var1 eval:  eval:  eval:  -> Any  { 
+            return var1 aaa:  bbb:  ccc: 
+        }
+
+      @pushCompilationContextStatement(new2212, new) 
+    // Methods added by the compiler
+
+    override    func clone -> Fun_0__ {
+        @javacode<<*
+        try {
+            return (_Fun__0____ ) this.clone(); 
+        } catch (CloneNotSupportedException e) { }
+        return null;
+        *>>    } 
+
+    func init: Test self__ {
+        @javacode{*
+        this._self____ = _self____;
+        *}
+    }
+
+    func new: Test self__ -> Fun_0__ {
+        @javacode<**< 
+            return new _Fun__0____(_self____);
+        >**>
+    }
+ @popCompilationContext(new2212) 
+@pushCompilationContextStatement(pp2211, pp) 
+
+    // Methods added by the compiler
+    override    func prototype -> Fun_0__ {
+        @javacode{* return prototypeFun_0__;
+        *}
+    } 
+ @popCompilationContext(pp2211) 
+end
+
+    object Fun_1__(Test self__)  extends Function<ffm.FFM_Test><none><none><none, Any>
+
+        func eval: ffm.FFM_Test var2 eval:  eval:  eval:  -> Any  { 
+            return var2 aaa:  bbb:  ccc: 
+        }
+
+      @pushCompilationContextStatement(new2214, new) 
+    // Methods added by the compiler
+
+    override    func clone -> Fun_1__ {
+        @javacode<<*
+        try {
+            return (_Fun__1____ ) this.clone(); 
+        } catch (CloneNotSupportedException e) { }
+        return null;
+        *>>    } 
+
+    func init: Test self__ {
+        @javacode{*
+        this._self____ = _self____;
+        *}
+    }
+
+    func new: Test self__ -> Fun_1__ {
+        @javacode<**< 
+            return new _Fun__1____(_self____);
+        >**>
+    }
+ @popCompilationContext(new2214) 
+@pushCompilationContextStatement(pp2213, pp) 
+
+    // Methods added by the compiler
+    override    func prototype -> Fun_1__ {
+        @javacode{* return prototypeFun_1__;
+        *}
+    } 
+ @popCompilationContext(pp2213) 
+end
+
+    object Fun_2__(Test self__)  extends Function<Nil>
+        override
+        func eval -> Any  { 
+            return FFM_Test("Carolina", 7) m1
+        }
+
+      @pushCompilationContextStatement(new2216, new) 
+    // Methods added by the compiler
+
+    override    func clone -> Fun_2__ {
+        @javacode<<*
+        try {
+            return (_Fun__2____ ) this.clone(); 
+        } catch (CloneNotSupportedException e) { }
+        return null;
+        *>>    } 
+
+    func init: Test self__ {
+        @javacode{*
+        this._self____ = _self____;
+        *}
+    }
+
+    func new: Test self__ -> Fun_2__ {
+        @javacode<**< 
+            return new _Fun__2____(_self____);
+        >**>
+    }
+ @popCompilationContext(new2216) 
+@pushCompilationContextStatement(pp2215, pp) 
+
+    // Methods added by the compiler
+    override    func prototype -> Fun_2__ {
+        @javacode{* return prototypeFun_2__;
+        *}
+    } 
+ @popCompilationContext(pp2215) 
+end
+
+    object Fun_3__(Test self__)  extends Function<Nil>
+        override
+        func eval -> Any  { 
+            return FFM_Test("Livia", 10) m1
+        }
+
+      @pushCompilationContextStatement(new2218, new) 
+    // Methods added by the compiler
+
+    override    func clone -> Fun_3__ {
+        @javacode<<*
+        try {
+            return (_Fun__3____ ) this.clone(); 
+        } catch (CloneNotSupportedException e) { }
+        return null;
+        *>>    } 
+
+    func init: Test self__ {
+        @javacode{*
+        this._self____ = _self____;
+        *}
+    }
+
+    func new: Test self__ -> Fun_3__ {
+        @javacode<**< 
+            return new _Fun__3____(_self____);
+        >**>
+    }
+ @popCompilationContext(new2218) 
+@pushCompilationContextStatement(pp2217, pp) 
+
+    // Methods added by the compiler
+    override    func prototype -> Fun_3__ {
+        @javacode{* return prototypeFun_3__;
+        *}
+    } 
+ @popCompilationContext(pp2217) 
+end
+
+    object Fun_4__(Test self__)  extends Function<ffm.FFM_Test, Any>
+
+        override
+        func eval: ffm.FFM_Test var3 -> Any  { 
+            return var3 m1
+        }
+
+      @pushCompilationContextStatement(new2220, new) 
+    // Methods added by the compiler
+
+    override    func clone -> Fun_4__ {
+        @javacode<<*
+        try {
+            return (_Fun__4____ ) this.clone(); 
+        } catch (CloneNotSupportedException e) { }
+        return null;
+        *>>    } 
+
+    func init: Test self__ {
+        @javacode{*
+        this._self____ = _self____;
+        *}
+    }
+
+    func new: Test self__ -> Fun_4__ {
+        @javacode<**< 
+            return new _Fun__4____(_self____);
+        >**>
+    }
+ @popCompilationContext(new2220) 
+@pushCompilationContextStatement(pp2219, pp) 
+
+    // Methods added by the compiler
+    override    func prototype -> Fun_4__ {
+        @javacode{* return prototypeFun_4__;
+        *}
+    } 
+ @popCompilationContext(pp2219) 
+end
+
+    object Fun_5__(Test self__)  extends Function<ffm.FFM_Test, Any>
+
+        override
+        func eval: ffm.FFM_Test var4 -> Any  { 
+            return var4 m1
+        }
+
+      @pushCompilationContextStatement(new2222, new) 
+    // Methods added by the compiler
+
+    override    func clone -> Fun_5__ {
+        @javacode<<*
+        try {
+            return (_Fun__5____ ) this.clone(); 
+        } catch (CloneNotSupportedException e) { }
+        return null;
+        *>>    } 
+
+    func init: Test self__ {
+        @javacode{*
+        this._self____ = _self____;
+        *}
+    }
+
+    func new: Test self__ -> Fun_5__ {
+        @javacode<**< 
+            return new _Fun__5____(_self____);
+        >**>
+    }
+ @popCompilationContext(new2222) 
+@pushCompilationContextStatement(pp2221, pp) 
+
+    // Methods added by the compiler
+    override    func prototype -> Fun_5__ {
+        @javacode{* return prototypeFun_5__;
+        *}
+    } 
+ @popCompilationContext(pp2221) 
+end
+
+    object Fun_6__(Test self__, Any carol)  extends Function<Nil>
+        override
+        func eval -> Any  { 
+            return carol m2
+        }
+
+      @pushCompilationContextStatement(new2224, new) 
+    // Methods added by the compiler
+
+    override    func clone -> Fun_6__ {
+        @javacode<<*
+        try {
+            return (_Fun__6____ ) this.clone(); 
+        } catch (CloneNotSupportedException e) { }
+        return null;
+        *>>    } 
+
+    func init: Test self__, Any carol {
+        @javacode{*
+        this._self____ = _self____;
+        this._carol = _carol;
+        *}
+    }
+
+    func new: Test self__, Any carol -> Fun_6__ {
+        @javacode<**< 
+            return new _Fun__6____(_self____, _carol);
+        >**>
+    }
+ @popCompilationContext(new2224) 
+@pushCompilationContextStatement(pp2223, pp) 
+
+    // Methods added by the compiler
+    override    func prototype -> Fun_6__ {
+        @javacode{* return prototypeFun_6__;
+        *}
+    } 
+ @popCompilationContext(pp2223) 
+end
+
+    object Fun_7__(Test self__, Any livia)  extends Function<Nil>
+        override
+        func eval -> Any  { 
+            return livia m2
+        }
+
+      @pushCompilationContextStatement(new2226, new) 
+    // Methods added by the compiler
+
+    override    func clone -> Fun_7__ {
+        @javacode<<*
+        try {
+            return (_Fun__7____ ) this.clone(); 
+        } catch (CloneNotSupportedException e) { }
+        return null;
+        *>>    } 
+
+    func init: Test self__, Any livia {
+        @javacode{*
+        this._self____ = _self____;
+        this._livia = _livia;
+        *}
+    }
+
+    func new: Test self__, Any livia -> Fun_7__ {
+        @javacode<**< 
+            return new _Fun__7____(_self____, _livia);
+        >**>
+    }
+ @popCompilationContext(new2226) 
+@pushCompilationContextStatement(pp2225, pp) 
+
+    // Methods added by the compiler
+    override    func prototype -> Fun_7__ {
+        @javacode{* return prototypeFun_7__;
+        *}
+    } 
+ @popCompilationContext(pp2225) 
+end
+
+    object Fun_8__(Test self__)  extends Function<ffm.FFM_Test, Any>
+
+        override
+        func eval: ffm.FFM_Test var5 -> Any  { 
+            return var5 m2
+        }
+
+      @pushCompilationContextStatement(new2228, new) 
+    // Methods added by the compiler
+
+    override    func clone -> Fun_8__ {
+        @javacode<<*
+        try {
+            return (_Fun__8____ ) this.clone(); 
+        } catch (CloneNotSupportedException e) { }
+        return null;
+        *>>    } 
+
+    func init: Test self__ {
+        @javacode{*
+        this._self____ = _self____;
+        *}
+    }
+
+    func new: Test self__ -> Fun_8__ {
+        @javacode<**< 
+            return new _Fun__8____(_self____);
+        >**>
+    }
+ @popCompilationContext(new2228) 
+@pushCompilationContextStatement(pp2227, pp) 
+
+    // Methods added by the compiler
+    override    func prototype -> Fun_8__ {
+        @javacode{* return prototypeFun_8__;
+        *}
+    } 
+ @popCompilationContext(pp2227) 
+end
+
+    object Fun_9__(Test self__)  extends Function<ffm.FFM_Test, Any>
+
+        override
+        func eval: ffm.FFM_Test var6 -> Any  { 
+            return var6 m2
+        }
+
+      @pushCompilationContextStatement(new2230, new) 
+    // Methods added by the compiler
+
+    override    func clone -> Fun_9__ {
+        @javacode<<*
+        try {
+            return (_Fun__9____ ) this.clone(); 
+        } catch (CloneNotSupportedException e) { }
+        return null;
+        *>>    } 
+
+    func init: Test self__ {
+        @javacode{*
+        this._self____ = _self____;
+        *}
+    }
+
+    func new: Test self__ -> Fun_9__ {
+        @javacode<**< 
+            return new _Fun__9____(_self____);
+        >**>
+    }
+ @popCompilationContext(new2230) 
+@pushCompilationContextStatement(pp2229, pp) 
+
+    // Methods added by the compiler
+    override    func prototype -> Fun_9__ {
+        @javacode{* return prototypeFun_9__;
+        *}
+    } 
+ @popCompilationContext(pp2229) 
+end
+
+    object Fun_10__(Test self__)  extends Function<ffm.FFM_Test, Any>
+
+        override
+        func eval: ffm.FFM_Test var7 -> Any  { 
+            return var7 m2
+        }
+
+      @pushCompilationContextStatement(new2232, new) 
+    // Methods added by the compiler
+
+    override    func clone -> Fun_10__ {
+        @javacode<<*
+        try {
+            return (_Fun__10____ ) this.clone(); 
+        } catch (CloneNotSupportedException e) { }
+        return null;
+        *>>    } 
+
+    func init: Test self__ {
+        @javacode{*
+        this._self____ = _self____;
+        *}
+    }
+
+    func new: Test self__ -> Fun_10__ {
+        @javacode<**< 
+            return new _Fun__10____(_self____);
+        >**>
+    }
+ @popCompilationContext(new2232) 
+@pushCompilationContextStatement(pp2231, pp) 
+
+    // Methods added by the compiler
+    override    func prototype -> Fun_10__ {
+        @javacode{* return prototypeFun_10__;
+        *}
+    } 
+ @popCompilationContext(pp2231) 
+end
+
+    object Fun_11__(Test self__)  extends Function<ffm.FFM_Test, Any>
+
+        override
+        func eval: ffm.FFM_Test var8 -> Any  { 
+            return var8 m2
+        }
+
+      @pushCompilationContextStatement(new2234, new) 
+    // Methods added by the compiler
+
+    override    func clone -> Fun_11__ {
+        @javacode<<*
+        try {
+            return (_Fun__11____ ) this.clone(); 
+        } catch (CloneNotSupportedException e) { }
+        return null;
+        *>>    } 
+
+    func init: Test self__ {
+        @javacode{*
+        this._self____ = _self____;
+        *}
+    }
+
+    func new: Test self__ -> Fun_11__ {
+        @javacode<**< 
+            return new _Fun__11____(_self____);
+        >**>
+    }
+ @popCompilationContext(new2234) 
+@pushCompilationContextStatement(pp2233, pp) 
+
+    // Methods added by the compiler
+    override    func prototype -> Fun_11__ {
+        @javacode{* return prototypeFun_11__;
+        *}
+    } 
+ @popCompilationContext(pp2233) 
+end
+
+    object Fun_12__(Test self__, Any carol)  extends Function<cyan.lang.String, cyan.lang.Int, cyan.lang.Char><cyan.lang.Int, cyan.lang.Char><cyan.lang.Char, cyan.lang.String, Any>
+
+        func eval: cyan.lang.String var10, cyan.lang.Int var11, cyan.lang.Char var12 eval: cyan.lang.Int var13, cyan.lang.Char var14 eval: cyan.lang.Char var15, cyan.lang.String var16 -> Any  { 
+            return carol aaa: var10, var11, var12 bbb: var13, var14 ccc: var15, var16
+        }
+
+      @pushCompilationContextStatement(new2236, new) 
+    // Methods added by the compiler
+
+    override    func clone -> Fun_12__ {
+        @javacode<<*
+        try {
+            return (_Fun__12____ ) this.clone(); 
+        } catch (CloneNotSupportedException e) { }
+        return null;
+        *>>    } 
+
+    func init: Test self__, Any carol {
+        @javacode{*
+        this._self____ = _self____;
+        this._carol = _carol;
+        *}
+    }
+
+    func new: Test self__, Any carol -> Fun_12__ {
+        @javacode<**< 
+            return new _Fun__12____(_self____, _carol);
+        >**>
+    }
+ @popCompilationContext(new2236) 
+@pushCompilationContextStatement(pp2235, pp) 
+
+    // Methods added by the compiler
+    override    func prototype -> Fun_12__ {
+        @javacode{* return prototypeFun_12__;
+        *}
+    } 
+ @popCompilationContext(pp2235) 
+end
+
+    object Fun_13__(Test self__, Any livia)  extends Function<cyan.lang.String, cyan.lang.Int, cyan.lang.Char><cyan.lang.Int, cyan.lang.Char><cyan.lang.Char, cyan.lang.String, Any>
+
+        func eval: cyan.lang.String var18, cyan.lang.Int var19, cyan.lang.Char var20 eval: cyan.lang.Int var21, cyan.lang.Char var22 eval: cyan.lang.Char var23, cyan.lang.String var24 -> Any  { 
+            return livia aaa: var18, var19, var20 bbb: var21, var22 ccc: var23, var24
+        }
+
+      @pushCompilationContextStatement(new2238, new) 
+    // Methods added by the compiler
+
+    override    func clone -> Fun_13__ {
+        @javacode<<*
+        try {
+            return (_Fun__13____ ) this.clone(); 
+        } catch (CloneNotSupportedException e) { }
+        return null;
+        *>>    } 
+
+    func init: Test self__, Any livia {
+        @javacode{*
+        this._self____ = _self____;
+        this._livia = _livia;
+        *}
+    }
+
+    func new: Test self__, Any livia -> Fun_13__ {
+        @javacode<**< 
+            return new _Fun__13____(_self____, _livia);
+        >**>
+    }
+ @popCompilationContext(new2238) 
+@pushCompilationContextStatement(pp2237, pp) 
+
+    // Methods added by the compiler
+    override    func prototype -> Fun_13__ {
+        @javacode{* return prototypeFun_13__;
+        *}
+    } 
+ @popCompilationContext(pp2237) 
+end
+
+    object Fun_14__(Test self__)  extends Function<ffm.FFM_Test><cyan.lang.String, cyan.lang.Int, cyan.lang.Char><cyan.lang.Int, cyan.lang.Char><cyan.lang.Char, cyan.lang.String, Any>
+
+        func eval: ffm.FFM_Test var25 eval: cyan.lang.String var26, cyan.lang.Int var27, cyan.lang.Char var28 eval: cyan.lang.Int var29, cyan.lang.Char var30 eval: cyan.lang.Char var31, cyan.lang.String var32 -> Any  { 
+            return var25 aaa: var26, var27, var28 bbb: var29, var30 ccc: var31, var32
+        }
+
+      @pushCompilationContextStatement(new2240, new) 
+    // Methods added by the compiler
+
+    override    func clone -> Fun_14__ {
+        @javacode<<*
+        try {
+            return (_Fun__14____ ) this.clone(); 
+        } catch (CloneNotSupportedException e) { }
+        return null;
+        *>>    } 
+
+    func init: Test self__ {
+        @javacode{*
+        this._self____ = _self____;
+        *}
+    }
+
+    func new: Test self__ -> Fun_14__ {
+        @javacode<**< 
+            return new _Fun__14____(_self____);
+        >**>
+    }
+ @popCompilationContext(new2240) 
+@pushCompilationContextStatement(pp2239, pp) 
+
+    // Methods added by the compiler
+    override    func prototype -> Fun_14__ {
+        @javacode{* return prototypeFun_14__;
+        *}
+    } 
+ @popCompilationContext(pp2239) 
+end
+
+    object Fun_15__(Test self__)  extends Function<ffm.FFM_Test><cyan.lang.String, cyan.lang.Int, cyan.lang.Char><cyan.lang.Int, cyan.lang.Char><cyan.lang.Char, cyan.lang.String, Any>
+
+        func eval: ffm.FFM_Test var33 eval: cyan.lang.String var34, cyan.lang.Int var35, cyan.lang.Char var36 eval: cyan.lang.Int var37, cyan.lang.Char var38 eval: cyan.lang.Char var39, cyan.lang.String var40 -> Any  { 
+            return var33 aaa: var34, var35, var36 bbb: var37, var38 ccc: var39, var40
+        }
+
+      @pushCompilationContextStatement(new2242, new) 
+    // Methods added by the compiler
+
+    override    func clone -> Fun_15__ {
+        @javacode<<*
+        try {
+            return (_Fun__15____ ) this.clone(); 
+        } catch (CloneNotSupportedException e) { }
+        return null;
+        *>>    } 
+
+    func init: Test self__ {
+        @javacode{*
+        this._self____ = _self____;
+        *}
+    }
+
+    func new: Test self__ -> Fun_15__ {
+        @javacode<**< 
+            return new _Fun__15____(_self____);
+        >**>
+    }
+ @popCompilationContext(new2242) 
+@pushCompilationContextStatement(pp2241, pp) 
+
+    // Methods added by the compiler
+    override    func prototype -> Fun_15__ {
+        @javacode{* return prototypeFun_15__;
+        *}
+    } 
+ @popCompilationContext(pp2241) 
+end
+
+    object Fun_16__(Test self__, Any carol)  extends Function<none><none><none, Any>
+
+        func eval:  eval:  eval:  -> Any  { 
+            return carol aaa:  bbb:  ccc: 
+        }
+
+      @pushCompilationContextStatement(new2244, new) 
+    // Methods added by the compiler
+
+    override    func clone -> Fun_16__ {
+        @javacode<<*
+        try {
+            return (_Fun__16____ ) this.clone(); 
+        } catch (CloneNotSupportedException e) { }
+        return null;
+        *>>    } 
+
+    func init: Test self__, Any carol {
+        @javacode{*
+        this._self____ = _self____;
+        this._carol = _carol;
+        *}
+    }
+
+    func new: Test self__, Any carol -> Fun_16__ {
+        @javacode<**< 
+            return new _Fun__16____(_self____, _carol);
+        >**>
+    }
+ @popCompilationContext(new2244) 
+@pushCompilationContextStatement(pp2243, pp) 
+
+    // Methods added by the compiler
+    override    func prototype -> Fun_16__ {
+        @javacode{* return prototypeFun_16__;
+        *}
+    } 
+ @popCompilationContext(pp2243) 
+end
+
+    object Fun_17__(Test self__, Any livia)  extends Function<none><none><none, Any>
+
+        func eval:  eval:  eval:  -> Any  { 
+            return livia aaa:  bbb:  ccc: 
+        }
+
+      @pushCompilationContextStatement(new2246, new) 
+    // Methods added by the compiler
+
+    override    func clone -> Fun_17__ {
+        @javacode<<*
+        try {
+            return (_Fun__17____ ) this.clone(); 
+        } catch (CloneNotSupportedException e) { }
+        return null;
+        *>>    } 
+
+    func init: Test self__, Any livia {
+        @javacode{*
+        this._self____ = _self____;
+        this._livia = _livia;
+        *}
+    }
+
+    func new: Test self__, Any livia -> Fun_17__ {
+        @javacode<**< 
+            return new _Fun__17____(_self____, _livia);
+        >**>
+    }
+ @popCompilationContext(new2246) 
+@pushCompilationContextStatement(pp2245, pp) 
+
+    // Methods added by the compiler
+    override    func prototype -> Fun_17__ {
+        @javacode{* return prototypeFun_17__;
+        *}
+    } 
+ @popCompilationContext(pp2245) 
+end
+
+    object Fun_18__(Test self__, Any carol)  extends Function<none><cyan.lang.String, cyan.lang.Char><none, Any>
+
+        func eval:  eval: cyan.lang.String var44, cyan.lang.Char var45 eval:  -> Any  { 
+            return carol aaa:  bbb: var44, var45 ccc: 
+        }
+
+      @pushCompilationContextStatement(new2248, new) 
+    // Methods added by the compiler
+
+    override    func clone -> Fun_18__ {
+        @javacode<<*
+        try {
+            return (_Fun__18____ ) this.clone(); 
+        } catch (CloneNotSupportedException e) { }
+        return null;
+        *>>    } 
+
+    func init: Test self__, Any carol {
+        @javacode{*
+        this._self____ = _self____;
+        this._carol = _carol;
+        *}
+    }
+
+    func new: Test self__, Any carol -> Fun_18__ {
+        @javacode<**< 
+            return new _Fun__18____(_self____, _carol);
+        >**>
+    }
+ @popCompilationContext(new2248) 
+@pushCompilationContextStatement(pp2247, pp) 
+
+    // Methods added by the compiler
+    override    func prototype -> Fun_18__ {
+        @javacode{* return prototypeFun_18__;
+        *}
+    } 
+ @popCompilationContext(pp2247) 
+end
+
+    object Fun_19__(Test self__, Any livia)  extends Function<none><cyan.lang.String, cyan.lang.Char><none, Any>
+
+        func eval:  eval: cyan.lang.String var47, cyan.lang.Char var48 eval:  -> Any  { 
+            return livia aaa:  bbb: var47, var48 ccc: 
+        }
+
+      @pushCompilationContextStatement(new2250, new) 
+    // Methods added by the compiler
+
+    override    func clone -> Fun_19__ {
+        @javacode<<*
+        try {
+            return (_Fun__19____ ) this.clone(); 
+        } catch (CloneNotSupportedException e) { }
+        return null;
+        *>>    } 
+
+    func init: Test self__, Any livia {
+        @javacode{*
+        this._self____ = _self____;
+        this._livia = _livia;
+        *}
+    }
+
+    func new: Test self__, Any livia -> Fun_19__ {
+        @javacode<**< 
+            return new _Fun__19____(_self____, _livia);
+        >**>
+    }
+ @popCompilationContext(new2250) 
+@pushCompilationContextStatement(pp2249, pp) 
+
+    // Methods added by the compiler
+    override    func prototype -> Fun_19__ {
+        @javacode{* return prototypeFun_19__;
+        *}
+    } 
+ @popCompilationContext(pp2249) 
+end
+
+    object Fun_20__(Test self__)  extends Function<ffm.FFM_Test><none><cyan.lang.String, cyan.lang.Char><none, Any>
+
+        func eval: ffm.FFM_Test var49 eval:  eval: cyan.lang.String var50, cyan.lang.Char var51 eval:  -> Any  { 
+            return var49 aaa:  bbb: var50, var51 ccc: 
+        }
+
+      @pushCompilationContextStatement(new2252, new) 
+    // Methods added by the compiler
+
+    override    func clone -> Fun_20__ {
+        @javacode<<*
+        try {
+            return (_Fun__20____ ) this.clone(); 
+        } catch (CloneNotSupportedException e) { }
+        return null;
+        *>>    } 
+
+    func init: Test self__ {
+        @javacode{*
+        this._self____ = _self____;
+        *}
+    }
+
+    func new: Test self__ -> Fun_20__ {
+        @javacode<**< 
+            return new _Fun__20____(_self____);
+        >**>
+    }
+ @popCompilationContext(new2252) 
+@pushCompilationContextStatement(pp2251, pp) 
+
+    // Methods added by the compiler
+    override    func prototype -> Fun_20__ {
+        @javacode{* return prototypeFun_20__;
+        *}
+    } 
+ @popCompilationContext(pp2251) 
+end
+
+    object Fun_21__(Test self__)  extends Function<ffm.FFM_Test><none><cyan.lang.String, cyan.lang.Char><none, Any>
+
+        func eval: ffm.FFM_Test var52 eval:  eval: cyan.lang.String var53, cyan.lang.Char var54 eval:  -> Any  { 
+            return var52 aaa:  bbb: var53, var54 ccc: 
+        }
+
+      @pushCompilationContextStatement(new2254, new) 
+    // Methods added by the compiler
+
+    override    func clone -> Fun_21__ {
+        @javacode<<*
+        try {
+            return (_Fun__21____ ) this.clone(); 
+        } catch (CloneNotSupportedException e) { }
+        return null;
+        *>>    } 
+
+    func init: Test self__ {
+        @javacode{*
+        this._self____ = _self____;
+        *}
+    }
+
+    func new: Test self__ -> Fun_21__ {
+        @javacode<**< 
+            return new _Fun__21____(_self____);
+        >**>
+    }
+ @popCompilationContext(new2254) 
+@pushCompilationContextStatement(pp2253, pp) 
+
+    // Methods added by the compiler
+    override    func prototype -> Fun_21__ {
+        @javacode{* return prototypeFun_21__;
+        *}
+    } 
+ @popCompilationContext(pp2253) 
+end
+
+    object Fun_22__(Test self__, Any carol)  extends Function<none><cyan.lang.String, cyan.lang.Int, Any>
+
+        func eval:  eval: cyan.lang.String var56, cyan.lang.Int var57 -> Any  { 
+            return carol aaa:  bbb: var56, var57
+        }
+
+      @pushCompilationContextStatement(new2256, new) 
+    // Methods added by the compiler
+
+    override    func clone -> Fun_22__ {
+        @javacode<<*
+        try {
+            return (_Fun__22____ ) this.clone(); 
+        } catch (CloneNotSupportedException e) { }
+        return null;
+        *>>    } 
+
+    func init: Test self__, Any carol {
+        @javacode{*
+        this._self____ = _self____;
+        this._carol = _carol;
+        *}
+    }
+
+    func new: Test self__, Any carol -> Fun_22__ {
+        @javacode<**< 
+            return new _Fun__22____(_self____, _carol);
+        >**>
+    }
+ @popCompilationContext(new2256) 
+@pushCompilationContextStatement(pp2255, pp) 
+
+    // Methods added by the compiler
+    override    func prototype -> Fun_22__ {
+        @javacode{* return prototypeFun_22__;
+        *}
+    } 
+ @popCompilationContext(pp2255) 
+end
+
+    object Fun_23__(Test self__, Any livia)  extends Function<none><cyan.lang.String, cyan.lang.Int, Any>
+
+        func eval:  eval: cyan.lang.String var59, cyan.lang.Int var60 -> Any  { 
+            return livia aaa:  bbb: var59, var60
+        }
+
+      @pushCompilationContextStatement(new2258, new) 
+    // Methods added by the compiler
+
+    override    func clone -> Fun_23__ {
+        @javacode<<*
+        try {
+            return (_Fun__23____ ) this.clone(); 
+        } catch (CloneNotSupportedException e) { }
+        return null;
+        *>>    } 
+
+    func init: Test self__, Any livia {
+        @javacode{*
+        this._self____ = _self____;
+        this._livia = _livia;
+        *}
+    }
+
+    func new: Test self__, Any livia -> Fun_23__ {
+        @javacode<**< 
+            return new _Fun__23____(_self____, _livia);
+        >**>
+    }
+ @popCompilationContext(new2258) 
+@pushCompilationContextStatement(pp2257, pp) 
+
+    // Methods added by the compiler
+    override    func prototype -> Fun_23__ {
+        @javacode{* return prototypeFun_23__;
+        *}
+    } 
+ @popCompilationContext(pp2257) 
+end
+
+    object Fun_24__(Test self__)  extends Function<ffm.FFM_Test><none><cyan.lang.String, cyan.lang.Int, Any>
+
+        func eval: ffm.FFM_Test var61 eval:  eval: cyan.lang.String var62, cyan.lang.Int var63 -> Any  { 
+            return var61 aaa:  bbb: var62, var63
+        }
+
+      @pushCompilationContextStatement(new2260, new) 
+    // Methods added by the compiler
+
+    override    func clone -> Fun_24__ {
+        @javacode<<*
+        try {
+            return (_Fun__24____ ) this.clone(); 
+        } catch (CloneNotSupportedException e) { }
+        return null;
+        *>>    } 
+
+    func init: Test self__ {
+        @javacode{*
+        this._self____ = _self____;
+        *}
+    }
+
+    func new: Test self__ -> Fun_24__ {
+        @javacode<**< 
+            return new _Fun__24____(_self____);
+        >**>
+    }
+ @popCompilationContext(new2260) 
+@pushCompilationContextStatement(pp2259, pp) 
+
+    // Methods added by the compiler
+    override    func prototype -> Fun_24__ {
+        @javacode{* return prototypeFun_24__;
+        *}
+    } 
+ @popCompilationContext(pp2259) 
+end
+
+    object Fun_25__(Test self__)  extends Function<ffm.FFM_Test><none><cyan.lang.String, cyan.lang.Int, Any>
+
+        func eval: ffm.FFM_Test var64 eval:  eval: cyan.lang.String var65, cyan.lang.Int var66 -> Any  { 
+            return var64 aaa:  bbb: var65, var66
+        }
+
+      @pushCompilationContextStatement(new2262, new) 
+    // Methods added by the compiler
+
+    override    func clone -> Fun_25__ {
+        @javacode<<*
+        try {
+            return (_Fun__25____ ) this.clone(); 
+        } catch (CloneNotSupportedException e) { }
+        return null;
+        *>>    } 
+
+    func init: Test self__ {
+        @javacode{*
+        this._self____ = _self____;
+        *}
+    }
+
+    func new: Test self__ -> Fun_25__ {
+        @javacode<**< 
+            return new _Fun__25____(_self____);
+        >**>
+    }
+ @popCompilationContext(new2262) 
+@pushCompilationContextStatement(pp2261, pp) 
+
+    // Methods added by the compiler
+    override    func prototype -> Fun_25__ {
+        @javacode{* return prototypeFun_25__;
+        *}
+    } 
+ @popCompilationContext(pp2261) 
+end
+
+    object Fun_26__(Test self__, Any carol)  extends Function<cyan.lang.String, cyan.lang.Int, Any>
+
+        func eval: cyan.lang.String var68, cyan.lang.Int var69 -> Any  { 
+            return carol aaa: var68, var69
+        }
+
+      @pushCompilationContextStatement(new2264, new) 
+    // Methods added by the compiler
+
+    override    func clone -> Fun_26__ {
+        @javacode<<*
+        try {
+            return (_Fun__26____ ) this.clone(); 
+        } catch (CloneNotSupportedException e) { }
+        return null;
+        *>>    } 
+
+    func init: Test self__, Any carol {
+        @javacode{*
+        this._self____ = _self____;
+        this._carol = _carol;
+        *}
+    }
+
+    func new: Test self__, Any carol -> Fun_26__ {
+        @javacode<**< 
+            return new _Fun__26____(_self____, _carol);
+        >**>
+    }
+ @popCompilationContext(new2264) 
+@pushCompilationContextStatement(pp2263, pp) 
+
+    // Methods added by the compiler
+    override    func prototype -> Fun_26__ {
+        @javacode{* return prototypeFun_26__;
+        *}
+    } 
+ @popCompilationContext(pp2263) 
+end
+
+    object Fun_27__(Test self__, Any livia)  extends Function<cyan.lang.String, cyan.lang.Int, Any>
+
+        func eval: cyan.lang.String var71, cyan.lang.Int var72 -> Any  { 
+            return livia aaa: var71, var72
+        }
+
+      @pushCompilationContextStatement(new2266, new) 
+    // Methods added by the compiler
+
+    override    func clone -> Fun_27__ {
+        @javacode<<*
+        try {
+            return (_Fun__27____ ) this.clone(); 
+        } catch (CloneNotSupportedException e) { }
+        return null;
+        *>>    } 
+
+    func init: Test self__, Any livia {
+        @javacode{*
+        this._self____ = _self____;
+        this._livia = _livia;
+        *}
+    }
+
+    func new: Test self__, Any livia -> Fun_27__ {
+        @javacode<**< 
+            return new _Fun__27____(_self____, _livia);
+        >**>
+    }
+ @popCompilationContext(new2266) 
+@pushCompilationContextStatement(pp2265, pp) 
+
+    // Methods added by the compiler
+    override    func prototype -> Fun_27__ {
+        @javacode{* return prototypeFun_27__;
+        *}
+    } 
+ @popCompilationContext(pp2265) 
+end
+
+    object Fun_28__(Test self__)  extends Function<ffm.FFM_Test><cyan.lang.String, cyan.lang.Int, Any>
+
+        func eval: ffm.FFM_Test var73 eval: cyan.lang.String var74, cyan.lang.Int var75 -> Any  { 
+            return var73 aaa: var74, var75
+        }
+
+      @pushCompilationContextStatement(new2268, new) 
+    // Methods added by the compiler
+
+    override    func clone -> Fun_28__ {
+        @javacode<<*
+        try {
+            return (_Fun__28____ ) this.clone(); 
+        } catch (CloneNotSupportedException e) { }
+        return null;
+        *>>    } 
+
+    func init: Test self__ {
+        @javacode{*
+        this._self____ = _self____;
+        *}
+    }
+
+    func new: Test self__ -> Fun_28__ {
+        @javacode<**< 
+            return new _Fun__28____(_self____);
+        >**>
+    }
+ @popCompilationContext(new2268) 
+@pushCompilationContextStatement(pp2267, pp) 
+
+    // Methods added by the compiler
+    override    func prototype -> Fun_28__ {
+        @javacode{* return prototypeFun_28__;
+        *}
+    } 
+ @popCompilationContext(pp2267) 
+end
+
+    object Fun_29__(Test self__)  extends Function<ffm.FFM_Test><cyan.lang.String, cyan.lang.Int, Any>
+
+        func eval: ffm.FFM_Test var76 eval: cyan.lang.String var77, cyan.lang.Int var78 -> Any  { 
+            return var76 aaa: var77, var78
+        }
+
+      @pushCompilationContextStatement(new2270, new) 
+    // Methods added by the compiler
+
+    override    func clone -> Fun_29__ {
+        @javacode<<*
+        try {
+            return (_Fun__29____ ) this.clone(); 
+        } catch (CloneNotSupportedException e) { }
+        return null;
+        *>>    } 
+
+    func init: Test self__ {
+        @javacode{*
+        this._self____ = _self____;
+        *}
+    }
+
+    func new: Test self__ -> Fun_29__ {
+        @javacode<**< 
+            return new _Fun__29____(_self____);
+        >**>
+    }
+ @popCompilationContext(new2270) 
+@pushCompilationContextStatement(pp2269, pp) 
+
+    // Methods added by the compiler
+    override    func prototype -> Fun_29__ {
+        @javacode{* return prototypeFun_29__;
+        *}
+    } 
+ @popCompilationContext(pp2269) 
+end
+
+    object Fun_30__(Test self__, Any carol)  extends Function<cyan.lang.Nil, Any>
+
+        func eval: cyan.lang.Nil var80 -> Any  { 
+            return carol aaa0: var80
+        }
+
+      @pushCompilationContextStatement(new2272, new) 
+    // Methods added by the compiler
+
+    override    func clone -> Fun_30__ {
+        @javacode<<*
+        try {
+            return (_Fun__30____ ) this.clone(); 
+        } catch (CloneNotSupportedException e) { }
+        return null;
+        *>>    } 
+
+    func init: Test self__, Any carol {
+        @javacode{*
+        this._self____ = _self____;
+        this._carol = _carol;
+        *}
+    }
+
+    func new: Test self__, Any carol -> Fun_30__ {
+        @javacode<**< 
+            return new _Fun__30____(_self____, _carol);
+        >**>
+    }
+ @popCompilationContext(new2272) 
+@pushCompilationContextStatement(pp2271, pp) 
+
+    // Methods added by the compiler
+    override    func prototype -> Fun_30__ {
+        @javacode{* return prototypeFun_30__;
+        *}
+    } 
+ @popCompilationContext(pp2271) 
+end
+
+    object Fun_31__(Test self__, Any livia)  extends Function<cyan.lang.Nil, Any>
+
+        func eval: cyan.lang.Nil var82 -> Any  { 
+            return livia aaa0: var82
+        }
+
+      @pushCompilationContextStatement(new2274, new) 
+    // Methods added by the compiler
+
+    override    func clone -> Fun_31__ {
+        @javacode<<*
+        try {
+            return (_Fun__31____ ) this.clone(); 
+        } catch (CloneNotSupportedException e) { }
+        return null;
+        *>>    } 
+
+    func init: Test self__, Any livia {
+        @javacode{*
+        this._self____ = _self____;
+        this._livia = _livia;
+        *}
+    }
+
+    func new: Test self__, Any livia -> Fun_31__ {
+        @javacode<**< 
+            return new _Fun__31____(_self____, _livia);
+        >**>
+    }
+ @popCompilationContext(new2274) 
+@pushCompilationContextStatement(pp2273, pp) 
+
+    // Methods added by the compiler
+    override    func prototype -> Fun_31__ {
+        @javacode{* return prototypeFun_31__;
+        *}
+    } 
+ @popCompilationContext(pp2273) 
+end
+
+    object Fun_32__(Test self__)  extends Function<ffm.FFM_Test><cyan.lang.Nil, Any>
+
+        func eval: ffm.FFM_Test var83 eval: cyan.lang.Nil var84 -> Any  { 
+            return var83 aaa0: var84
+        }
+
+      @pushCompilationContextStatement(new2276, new) 
+    // Methods added by the compiler
+
+    override    func clone -> Fun_32__ {
+        @javacode<<*
+        try {
+            return (_Fun__32____ ) this.clone(); 
+        } catch (CloneNotSupportedException e) { }
+        return null;
+        *>>    } 
+
+    func init: Test self__ {
+        @javacode{*
+        this._self____ = _self____;
+        *}
+    }
+
+    func new: Test self__ -> Fun_32__ {
+        @javacode<**< 
+            return new _Fun__32____(_self____);
+        >**>
+    }
+ @popCompilationContext(new2276) 
+@pushCompilationContextStatement(pp2275, pp) 
+
+    // Methods added by the compiler
+    override    func prototype -> Fun_32__ {
+        @javacode{* return prototypeFun_32__;
+        *}
+    } 
+ @popCompilationContext(pp2275) 
+end
+
+    object Fun_33__(Test self__)  extends Function<ffm.FFM_Test><cyan.lang.Nil, Any>
+
+        func eval: ffm.FFM_Test var85 eval: cyan.lang.Nil var86 -> Any  { 
+            return var85 aaa0: var86
+        }
+
+      @pushCompilationContextStatement(new2278, new) 
+    // Methods added by the compiler
+
+    override    func clone -> Fun_33__ {
+        @javacode<<*
+        try {
+            return (_Fun__33____ ) this.clone(); 
+        } catch (CloneNotSupportedException e) { }
+        return null;
+        *>>    } 
+
+    func init: Test self__ {
+        @javacode{*
+        this._self____ = _self____;
+        *}
+    }
+
+    func new: Test self__ -> Fun_33__ {
+        @javacode<**< 
+            return new _Fun__33____(_self____);
+        >**>
+    }
+ @popCompilationContext(new2278) 
+@pushCompilationContextStatement(pp2277, pp) 
+
+    // Methods added by the compiler
+    override    func prototype -> Fun_33__ {
+        @javacode{* return prototypeFun_33__;
+        *}
+    } 
+ @popCompilationContext(pp2277) 
+end
+
+    object Fun_34__(Test self__)  extends Function<ffm.FFM_Test><cyan.lang.Int, Any>
+
+        func eval: ffm.FFM_Test var87 eval: cyan.lang.Int var88 -> Any  { 
+            return var87 mult: var88
+        }
+
+      @pushCompilationContextStatement(new2280, new) 
+    // Methods added by the compiler
+
+    override    func clone -> Fun_34__ {
+        @javacode<<*
+        try {
+            return (_Fun__34____ ) this.clone(); 
+        } catch (CloneNotSupportedException e) { }
+        return null;
+        *>>    } 
+
+    func init: Test self__ {
+        @javacode{*
+        this._self____ = _self____;
+        *}
+    }
+
+    func new: Test self__ -> Fun_34__ {
+        @javacode<**< 
+            return new _Fun__34____(_self____);
+        >**>
+    }
+ @popCompilationContext(new2280) 
+@pushCompilationContextStatement(pp2279, pp) 
+
+    // Methods added by the compiler
+    override    func prototype -> Fun_34__ {
+        @javacode{* return prototypeFun_34__;
+        *}
+    } 
+ @popCompilationContext(pp2279) 
+end
+
+    object Fun_35__(Test self__)  extends Function<ffm.FFM_Test><cyan.lang.Int, Any>
+
+        func eval: ffm.FFM_Test var89 eval: cyan.lang.Int var90 -> Any  { 
+            return var89 mult: var90
+        }
+
+      @pushCompilationContextStatement(new2282, new) 
+    // Methods added by the compiler
+
+    override    func clone -> Fun_35__ {
+        @javacode<<*
+        try {
+            return (_Fun__35____ ) this.clone(); 
+        } catch (CloneNotSupportedException e) { }
+        return null;
+        *>>    } 
+
+    func init: Test self__ {
+        @javacode{*
+        this._self____ = _self____;
+        *}
+    }
+
+    func new: Test self__ -> Fun_35__ {
+        @javacode<**< 
+            return new _Fun__35____(_self____);
+        >**>
+    }
+ @popCompilationContext(new2282) 
+@pushCompilationContextStatement(pp2281, pp) 
+
+    // Methods added by the compiler
+    override    func prototype -> Fun_35__ {
+        @javacode{* return prototypeFun_35__;
+        *}
+    } 
+ @popCompilationContext(pp2281) 
+end
+
+    object Fun_36__(Test self__)  extends Function<ffm.FFM_Test, Any>
+
+        override
+        func eval: ffm.FFM_Test var91 -> Any  { 
+            return var91 unMinus
+        }
+
+      @pushCompilationContextStatement(new2284, new) 
+    // Methods added by the compiler
+
+    override    func clone -> Fun_36__ {
+        @javacode<<*
+        try {
+            return (_Fun__36____ ) this.clone(); 
+        } catch (CloneNotSupportedException e) { }
+        return null;
+        *>>    } 
+
+    func init: Test self__ {
+        @javacode{*
+        this._self____ = _self____;
+        *}
+    }
+
+    func new: Test self__ -> Fun_36__ {
+        @javacode<**< 
+            return new _Fun__36____(_self____);
+        >**>
+    }
+ @popCompilationContext(new2284) 
+@pushCompilationContextStatement(pp2283, pp) 
+
+    // Methods added by the compiler
+    override    func prototype -> Fun_36__ {
+        @javacode{* return prototypeFun_36__;
+        *}
+    } 
+ @popCompilationContext(pp2283) 
+end
+
+    object Fun_37__(Test self__)  extends Function<ffm.FFM_Test, Any>
+
+        override
+        func eval: ffm.FFM_Test var92 -> Any  { 
+            return var92 unMinus
+        }
+
+      @pushCompilationContextStatement(new2286, new) 
+    // Methods added by the compiler
+
+    override    func clone -> Fun_37__ {
+        @javacode<<*
+        try {
+            return (_Fun__37____ ) this.clone(); 
+        } catch (CloneNotSupportedException e) { }
+        return null;
+        *>>    } 
+
+    func init: Test self__ {
+        @javacode{*
+        this._self____ = _self____;
+        *}
+    }
+
+    func new: Test self__ -> Fun_37__ {
+        @javacode<**< 
+            return new _Fun__37____(_self____);
+        >**>
+    }
+ @popCompilationContext(new2286) 
+@pushCompilationContextStatement(pp2285, pp) 
+
+    // Methods added by the compiler
+    override    func prototype -> Fun_37__ {
+        @javacode{* return prototypeFun_37__;
+        *}
+    } 
+ @popCompilationContext(pp2285) 
+end
+
+    object Fun_38__(Test self__, Any carol)  extends Function<cyan.lang.Int, Any>
+
+        func eval: cyan.lang.Int var94 -> Any  { 
+            return carol mult: var94
+        }
+
+      @pushCompilationContextStatement(new2288, new) 
+    // Methods added by the compiler
+
+    override    func clone -> Fun_38__ {
+        @javacode<<*
+        try {
+            return (_Fun__38____ ) this.clone(); 
+        } catch (CloneNotSupportedException e) { }
+        return null;
+        *>>    } 
+
+    func init: Test self__, Any carol {
+        @javacode{*
+        this._self____ = _self____;
+        this._carol = _carol;
+        *}
+    }
+
+    func new: Test self__, Any carol -> Fun_38__ {
+        @javacode<**< 
+            return new _Fun__38____(_self____, _carol);
+        >**>
+    }
+ @popCompilationContext(new2288) 
+@pushCompilationContextStatement(pp2287, pp) 
+
+    // Methods added by the compiler
+    override    func prototype -> Fun_38__ {
+        @javacode{* return prototypeFun_38__;
+        *}
+    } 
+ @popCompilationContext(pp2287) 
+end
+
+    object Fun_39__(Test self__, Any livia)  extends Function<cyan.lang.Int, Any>
+
+        func eval: cyan.lang.Int var96 -> Any  { 
+            return livia mult: var96
+        }
+
+      @pushCompilationContextStatement(new2290, new) 
+    // Methods added by the compiler
+
+    override    func clone -> Fun_39__ {
+        @javacode<<*
+        try {
+            return (_Fun__39____ ) this.clone(); 
+        } catch (CloneNotSupportedException e) { }
+        return null;
+        *>>    } 
+
+    func init: Test self__, Any livia {
+        @javacode{*
+        this._self____ = _self____;
+        this._livia = _livia;
+        *}
+    }
+
+    func new: Test self__, Any livia -> Fun_39__ {
+        @javacode<**< 
+            return new _Fun__39____(_self____, _livia);
+        >**>
+    }
+ @popCompilationContext(new2290) 
+@pushCompilationContextStatement(pp2289, pp) 
+
+    // Methods added by the compiler
+    override    func prototype -> Fun_39__ {
+        @javacode{* return prototypeFun_39__;
+        *}
+    } 
+ @popCompilationContext(pp2289) 
+end
+
+    object Fun_40__(Test self__, Any carol)  extends Function<Nil>
+        override
+        func eval -> Any  { 
+            return carol unMinus
+        }
+
+      @pushCompilationContextStatement(new2292, new) 
+    // Methods added by the compiler
+
+    override    func clone -> Fun_40__ {
+        @javacode<<*
+        try {
+            return (_Fun__40____ ) this.clone(); 
+        } catch (CloneNotSupportedException e) { }
+        return null;
+        *>>    } 
+
+    func init: Test self__, Any carol {
+        @javacode{*
+        this._self____ = _self____;
+        this._carol = _carol;
+        *}
+    }
+
+    func new: Test self__, Any carol -> Fun_40__ {
+        @javacode<**< 
+            return new _Fun__40____(_self____, _carol);
+        >**>
+    }
+ @popCompilationContext(new2292) 
+@pushCompilationContextStatement(pp2291, pp) 
+
+    // Methods added by the compiler
+    override    func prototype -> Fun_40__ {
+        @javacode{* return prototypeFun_40__;
+        *}
+    } 
+ @popCompilationContext(pp2291) 
+end
+
+    object Fun_41__(Test self__, Any livia)  extends Function<Nil>
+        override
+        func eval -> Any  { 
+            return livia unMinus
+        }
+
+      @pushCompilationContextStatement(new2294, new) 
+    // Methods added by the compiler
+
+    override    func clone -> Fun_41__ {
+        @javacode<<*
+        try {
+            return (_Fun__41____ ) this.clone(); 
+        } catch (CloneNotSupportedException e) { }
+        return null;
+        *>>    } 
+
+    func init: Test self__, Any livia {
+        @javacode{*
+        this._self____ = _self____;
+        this._livia = _livia;
+        *}
+    }
+
+    func new: Test self__, Any livia -> Fun_41__ {
+        @javacode<**< 
+            return new _Fun__41____(_self____, _livia);
+        >**>
+    }
+ @popCompilationContext(new2294) 
+@pushCompilationContextStatement(pp2293, pp) 
+
+    // Methods added by the compiler
+    override    func prototype -> Fun_41__ {
+        @javacode{* return prototypeFun_41__;
+        *}
+    } 
+ @popCompilationContext(pp2293) 
+end
+
+    object Fun_42__(Test self__, Any ca)  extends Function<cyan.lang.Byte, Any>
+
+        override
+        func eval: cyan.lang.Byte var97 -> Any  { 
+            return ca * var97
+        }
+
+      @pushCompilationContextStatement(new2296, new) 
+    // Methods added by the compiler
+
+    override    func clone -> Fun_42__ {
+        @javacode<<*
+        try {
+            return (_Fun__42____ ) this.clone(); 
+        } catch (CloneNotSupportedException e) { }
+        return null;
+        *>>    } 
+
+    func init: Test self__, Any ca {
+        @javacode{*
+        this._self____ = _self____;
+        this._ca = _ca;
+        *}
+    }
+
+    func new: Test self__, Any ca -> Fun_42__ {
+        @javacode<**< 
+            return new _Fun__42____(_self____, _ca);
+        >**>
+    }
+ @popCompilationContext(new2296) 
+@pushCompilationContextStatement(pp2295, pp) 
+
+    // Methods added by the compiler
+    override    func prototype -> Fun_42__ {
+        @javacode{* return prototypeFun_42__;
+        *}
+    } 
+ @popCompilationContext(pp2295) 
+end
+
+    object Fun_43__(Test self__, Any li)  extends Function<cyan.lang.Byte, Any>
+
+        override
+        func eval: cyan.lang.Byte var98 -> Any  { 
+            return li * var98
+        }
+
+      @pushCompilationContextStatement(new2298, new) 
+    // Methods added by the compiler
+
+    override    func clone -> Fun_43__ {
+        @javacode<<*
+        try {
+            return (_Fun__43____ ) this.clone(); 
+        } catch (CloneNotSupportedException e) { }
+        return null;
+        *>>    } 
+
+    func init: Test self__, Any li {
+        @javacode{*
+        this._self____ = _self____;
+        this._li = _li;
+        *}
+    }
+
+    func new: Test self__, Any li -> Fun_43__ {
+        @javacode<**< 
+            return new _Fun__43____(_self____, _li);
+        >**>
+    }
+ @popCompilationContext(new2298) 
+@pushCompilationContextStatement(pp2297, pp) 
+
+    // Methods added by the compiler
+    override    func prototype -> Fun_43__ {
+        @javacode{* return prototypeFun_43__;
+        *}
+    } 
+ @popCompilationContext(pp2297) 
+end
+
+    object Fun_44__(Test self__, Any ca)  extends Function<Nil>
+        override
+        func eval -> Any  { 
+            return -ca
+        }
+
+      @pushCompilationContextStatement(new2300, new) 
+    // Methods added by the compiler
+
+    override    func clone -> Fun_44__ {
+        @javacode<<*
+        try {
+            return (_Fun__44____ ) this.clone(); 
+        } catch (CloneNotSupportedException e) { }
+        return null;
+        *>>    } 
+
+    func init: Test self__, Any ca {
+        @javacode{*
+        this._self____ = _self____;
+        this._ca = _ca;
+        *}
+    }
+
+    func new: Test self__, Any ca -> Fun_44__ {
+        @javacode<**< 
+            return new _Fun__44____(_self____, _ca);
+        >**>
+    }
+ @popCompilationContext(new2300) 
+@pushCompilationContextStatement(pp2299, pp) 
+
+    // Methods added by the compiler
+    override    func prototype -> Fun_44__ {
+        @javacode{* return prototypeFun_44__;
+        *}
+    } 
+ @popCompilationContext(pp2299) 
+end
+
+    object Fun_45__(Test self__, Any li)  extends Function<Nil>
+        override
+        func eval -> Any  { 
+            return -li
+        }
+
+      @pushCompilationContextStatement(new2302, new) 
+    // Methods added by the compiler
+
+    override    func clone -> Fun_45__ {
+        @javacode<<*
+        try {
+            return (_Fun__45____ ) this.clone(); 
+        } catch (CloneNotSupportedException e) { }
+        return null;
+        *>>    } 
+
+    func init: Test self__, Any li {
+        @javacode{*
+        this._self____ = _self____;
+        this._li = _li;
+        *}
+    }
+
+    func new: Test self__, Any li -> Fun_45__ {
+        @javacode<**< 
+            return new _Fun__45____(_self____, _li);
+        >**>
+    }
+ @popCompilationContext(new2302) 
+@pushCompilationContextStatement(pp2301, pp) 
+
+    // Methods added by the compiler
+    override    func prototype -> Fun_45__ {
+        @javacode{* return prototypeFun_45__;
+        *}
+    } 
+ @popCompilationContext(pp2301) 
+end
+
+
+
+ @popCompilationContext(inner2210) 
+end

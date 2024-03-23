@@ -1,7 +1,0 @@
-package shape
-
-
-
-object Proto_IColor__ implements IColor
-
-end

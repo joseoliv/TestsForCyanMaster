@@ -1,8 +1,0 @@
-package generic01
-
-
-object H<Int, Char><String, Float, generic01.TestGeneric01><generic01.TestGeneric01, generic01.P<generic01.B, name>> 
-
-
-end
-

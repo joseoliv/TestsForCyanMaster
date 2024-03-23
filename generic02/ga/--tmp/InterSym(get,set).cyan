@@ -1,8 +1,0 @@
-package generic02.ga
-
-
-public interface InterSym<get, set>
-    func get -> Int 
-    func set: (Int n)  
-end
-
